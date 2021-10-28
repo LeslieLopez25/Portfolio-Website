@@ -210,13 +210,10 @@ section .title::after {
 }
 
 .text-3 {
-  font-size: 40px;
-  margin: 5px 0;
-}
-
-.text-3 span {
   color: #0866f1;
   font-weight: 500;
+  font-size: 40px;
+  margin: 5px 0;
 }
 
 /* about section styling */
@@ -789,28 +786,4 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
-}
-
-/*ANIMATE*/
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 28.2rem;
-  height: 100%;
-  z-index: 1000;
-}
-
-.first {
-  background-color: #003970;
-}
-
-.second {
-  background-color: #003970;
-  left: 33.3%;
-}
-
-.third {
-  background-color: #003970;
-  left: 66.6%;
 }

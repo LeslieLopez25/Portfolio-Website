@@ -33,14 +33,6 @@ $(document).ready(function() {
     $(".menu-btn i").toggleClass("active");
   });
 
-  // typing text animation script
-  var typed = new Typed(".typing", {
-    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-  });
-
   var typed = new Typed(".typing-2", {
     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
     typeSpeed: 100,
@@ -70,9 +62,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// Animate
-// Overlay
-gsap.to(".first", 1.5, { delay: 0.5, top: "-100%", ease: Expo.easeInOut });
-gsap.to(".second", 1.5, { delay: 0.7, top: "-100%", ease: Expo.easeInOut });
-gsap.to(".third", 1.5, { delay: 0.9, top: "-100%", ease: Expo.easeInOut });
