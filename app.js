@@ -62,3 +62,12 @@ $(document).ready(function() {
     }
   });
 });
+
+// Liquid animation effect
+new hoverEffect({
+  parent: document.querySelector(".bg-img"),
+  intensity: 0.3,
+  image1: "/images/img-1.jpg",
+  image2: "./images/img-2.jpg",
+  displacementImage: "/images/leaves.jpg"
+});
