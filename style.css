@@ -9,23 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 /* all similar content styling codes */
 section {
   padding: 100px 0;
@@ -41,6 +24,8 @@ section {
 .services,
 .skills,
 .teams,
+.timeline,
+.courses,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -49,6 +34,9 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.timeline,
+.timeline-content,
+.courses,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +81,7 @@ section .title::after {
   position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
@@ -151,26 +140,6 @@ section .title::after {
   font-size: 23px;
   cursor: pointer;
   display: none;
-}
-
-.scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #0866f1;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 100;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
 }
 
 .scroll-up-btn.show {
@@ -278,18 +247,21 @@ section .title::after {
 
 /* interest section styling */
 .services,
-.teams {
+.teams,
+.courses {
   color: #fff;
   background: #111;
 }
 
 .services .title::before,
-.teams .title::before {
+.teams .title::before,
+.courses .title::before {
   background: #fff;
 }
 
 .services .title::after,
-.teams .title::after {
+.teams .title::after,
+.courses .title::after {
   background: #111;
   content: "My Interests and Hobbies";
 }
@@ -468,6 +440,169 @@ section .title::after {
 }
 
 .teams .carousel .card:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #0866f1 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #0866f1 !important;
+}
+
+/* Timeline section */
+.timeline .title::after {
+  content: "what i know";
+}
+
+.timeline .timeline-content .column {
+  width: calc(50% - 30px);
+}
+
+.timeline .timeline-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline .timeline-content .left p {
+  text-align: justify;
+}
+
+.timeline .timeline-content .left a {
+  display: inline-block;
+  background: #0866f1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #0866f1;
+  transition: all 0.3s ease;
+}
+
+.timeline .timeline-content .left a:hover {
+  color: #0866f1;
+  background: none;
+}
+
+.timeline .timeline-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.timeline .timeline-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline .timeline-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.timeline .timeline-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.timeline .timeline-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #0866f1;
+}
+
+.timeline-content .right .html::before {
+  width: 90%;
+}
+
+.timeline-content .right .css::before {
+  width: 60%;
+}
+
+.timeline-content .right .js::before {
+  width: 80%;
+}
+
+.timeline-content .right .php::before {
+  width: 50%;
+}
+
+.timeline-content .right .mysql::before {
+  width: 70%;
+}
+
+/* Courses section */
+.courses .title::after {
+  content: "Web Apps That I've Worked On And Created";
+}
+
+.courses .carousel .card {
+  background: #003970;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.courses .carousel .card:hover {
+  background: #0866f1;
+}
+
+.courses .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.courses .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.courses .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.courses .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0866f1;
+  transition: all 0.3s ease;
+}
+
+.courses .carousel .card:hover img {
   border-color: #fff;
 }
 
