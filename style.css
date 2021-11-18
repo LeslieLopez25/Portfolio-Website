@@ -21,9 +21,9 @@ section {
 }
 
 .about,
-.services,
+.interests,
 .skills,
-.teams,
+.projects,
 .timeline,
 .courses,
 .contact,
@@ -32,7 +32,7 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
+.interests .interests-content,
 .skills .skills-content,
 .timeline,
 .timeline-content,
@@ -52,17 +52,6 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
-}
-
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
 }
 
 section .title::after {
@@ -194,10 +183,6 @@ section .title::after {
 }
 
 /* about section styling */
-.about .title::after {
-  content: "Who I Am";
-}
-
 .about .about-content .left {
   width: 45%;
 }
@@ -246,27 +231,20 @@ section .title::after {
 }
 
 /* interest section styling */
-.services,
-.teams,
+.interests,
+.projects,
 .courses {
   color: #fff;
-  background: #111;
+  background: hsl(0, 0%, 3.1%);
 }
 
-.services .title::before,
-.teams .title::before,
+.interests .title::before,
+.projects .title::before,
 .courses .title::before {
   background: #fff;
 }
 
-.services .title::after,
-.teams .title::after,
-.courses .title::after {
-  background: #111;
-  content: "My Interests and Hobbies";
-}
-
-.services .serv-content .card {
+.interests .interests-content .card {
   width: calc(33% - 20px);
   background: #003970;
   text-align: center;
@@ -276,40 +254,35 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.interests .interests-content .card:hover {
   background: #0866f1;
 }
 
-.services .serv-content .card .box {
+.interests .interests-content .card .box {
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.interests .interests-content .card:hover .box {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.interests .interests-content .card i {
   font-size: 50px;
   color: #0866f1;
   transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.interests .interests-content .card:hover i {
   color: #fff;
 }
 
-.services .serv-content .card .text {
+.interests .interests-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
 /* skills section styling */
-
-.skills .title::after {
-  content: "what i know";
-}
-
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
@@ -395,11 +368,7 @@ section .title::after {
 }
 
 /* projects section styling */
-.teams .title::after {
-  content: "Web Apps That I've Worked On And Created";
-}
-
-.teams .carousel .card {
+.projects .carousel .card {
   background: #003970;
   border-radius: 6px;
   padding: 25px 35px;
@@ -408,11 +377,11 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover {
+.projects .carousel .card:hover {
   background: #0866f1;
 }
 
-.teams .carousel .card .box {
+.projects .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,17 +389,17 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box {
+.projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.projects .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card img {
+.projects .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -439,7 +408,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover img {
+.projects .carousel .card:hover img {
   border-color: #fff;
 }
 
@@ -469,10 +438,6 @@ section .title::after {
 }
 
 /* Timeline section */
-.timeline .title::after {
-  content: "what i know";
-}
-
 .timeline .timeline-content .column {
   width: calc(50% - 30px);
 }
@@ -558,10 +523,6 @@ section .title::after {
 }
 
 /* Courses section */
-.courses .title::after {
-  content: "Web Apps That I've Worked On And Created";
-}
-
 .courses .carousel .card {
   background: #003970;
   border-radius: 6px;
@@ -632,10 +593,6 @@ section .title::after {
 }
 
 /* contact section styling */
-.contact .title::after {
-  content: "Get In Touch";
-}
-
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -753,7 +710,7 @@ a:link {
 }
 
 a:visited {
-  color: #000;
+  color: hsl(0, 0%, 3.1%);
 }
 
 a:hover {
@@ -762,7 +719,7 @@ a:hover {
 
 /* footer section styling */
 footer {
-  background: #111;
+  background: hsl(0, 0%, 3.1%);
   padding: 15px 23px;
   color: #fff;
   text-align: center;
@@ -813,7 +770,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: hsl(0, 0%, 3.1%);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -864,7 +821,7 @@ footer span a:hover {
     flex: 100%;
   }
 
-  .services .serv-content .card {
+  .interests .interests-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -893,7 +850,7 @@ footer span a:hover {
     font-size: 20px;
   }
 
-  .services .serv-content .card {
+  .interests .interests-content .card {
     width: 100%;
   }
 }
