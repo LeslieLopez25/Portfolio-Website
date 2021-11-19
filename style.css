@@ -76,7 +76,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.navbar #sticky {
   padding: 15px 0;
   background: #0866f1;
 }
@@ -94,11 +94,11 @@ section .title::after {
 }
 
 .navbar .logo span {
-  color: #0866f1;
+  color: red;
 }
 
-.navbar.sticky .logo span {
-  color: #fff;
+.navbar #sticky .logo span {
+  color: green;
 }
 
 .navbar .menu li {
