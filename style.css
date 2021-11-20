@@ -71,7 +71,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   top: 0;
-  padding: 30px 0;
+  padding: 20px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
@@ -97,10 +97,6 @@ section .title::after {
   color: red;
 }
 
-.navbar #sticky .logo span {
-  color: green;
-}
-
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -119,7 +115,7 @@ section .title::after {
   color: #0866f1;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbar #sticky .menu li a:hover {
   color: #fff;
 }
 
@@ -129,16 +125,6 @@ section .title::after {
   font-size: 23px;
   cursor: pointer;
   display: none;
-}
-
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.scroll-up-btn:hover {
-  filter: brightness(90%);
 }
 
 /* home section styling */

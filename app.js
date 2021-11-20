@@ -11,6 +11,15 @@ function scrollFunction() {
   }
 }
 
+// Menu
+const menu = document.querySelector(".menu-btn");
+const menuLinks = document.querySelector(".menu");
+
+menu.addEventListener("click", function() {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+});
+
 // Liquid animation effect
 new hoverEffect({
   parent: document.querySelector(".bg-img"),
