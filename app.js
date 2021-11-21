@@ -5,18 +5,19 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("sticky").style.background = "#0866f1";
+    document.getElementById("sticky").style.background =
+      "linear-gradient(to right, #0866f1, #8b0000)";
   } else {
     document.getElementById("sticky").style.background = "none";
   }
 }
 
-// Menu
-const menu = document.querySelector(".menu-btn");
+// Mobile menu
+const menu = document.querySelector(".mobile-menu");
 const menuLinks = document.querySelector(".menu");
 
 menu.addEventListener("click", function() {
-  menu.classList.toggle("is-active");
+  menu.classList.toggle("active");
   menuLinks.classList.toggle("active");
 });
 
