@@ -56,7 +56,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background: red;
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -69,7 +73,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background: yellow;
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -92,7 +100,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background: yellow;
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -106,7 +118,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background: red;
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -138,7 +154,7 @@ nav {
 }
 
 .navbar .logo {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 35px;
   font-weight: 600;
 }
@@ -154,7 +170,7 @@ nav {
 
 .navbar .menu li a {
   display: block;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -166,12 +182,12 @@ nav {
 }
 
 .navbar #sticky .menu li a:hover {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 /* menu btn styling */
 .menu-btn {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -181,7 +197,7 @@ nav {
 .home {
   display: flex;
   height: 100vh;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -241,29 +257,24 @@ nav {
   margin-bottom: 10px;
 }
 
-.about .about-content .right .text span {
-  color: #0866f1;
-}
-
 .about .about-content .right p {
   text-align: justify;
 }
 
 .about .about-content .right a {
   display: inline-block;
-  background: #0866f1;
-  color: #fff;
+  background: hsl(210.1, 100%, 50%);
+  color: hsl(0, 0%, 100%);
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #0866f1;
-  transition: all 0.3s ease;
+  border: 2px solid hsl(210.1, 100%, 50%);
 }
 
 .about .about-content .right a:hover {
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
   background: none;
 }
 
@@ -271,22 +282,21 @@ nav {
 .interests,
 .projects,
 .courses {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
 }
 
 .interests .interests-content .card {
   width: calc(33% - 20px);
-  background: #003970;
+  background: hsl(210.1, 100%, 50%);
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .interests .interests-content .card:hover {
-  background: #0866f1;
+  background: hsl(195.1, 100%, 50%);
 }
 
 .interests .interests-content .card .box {
@@ -297,14 +307,17 @@ nav {
   transform: scale(1.05);
 }
 
-.interests .interests-content .card i {
-  font-size: 50px;
-  color: #0866f1;
+.interests .interests-content .card .interests-imgs {
+  width: 130px;
+  height: 130px;
+  color: hsl(195.1, 100%, 50%);
   transition: color 0.3s ease;
 }
 
-.interests .interests-content .card:hover i {
-  color: #fff;
+.interests .interests-content .card:hover .interests-imgs {
+  color: hsl(0, 0%, 100%);
+  width: 130px;
+  height: 130px;
 }
 
 .interests .interests-content .card .text {
@@ -330,19 +343,19 @@ nav {
 
 .skills .skills-content .left a {
   display: inline-block;
-  background: #0866f1;
-  color: #fff;
+  background: hsl(210.1, 100%, 50%);
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #0866f1;
+  border: 2px solid hsl(210.1, 100%, 50%);
   transition: all 0.3s ease;
 }
 
 .skills .skills-content .left a:hover {
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
   background: none;
 }
 
@@ -365,7 +378,7 @@ nav {
 .skills .skills-content .right .line {
   height: 5px;
   width: 100%;
-  background: lightgrey;
+  background: hsl(0, 0%, 75.3%);
   position: relative;
 }
 
@@ -375,42 +388,24 @@ nav {
   height: 100%;
   left: 0;
   top: 0;
-  background: #0866f1;
-}
-
-.skills-content .right .html::before {
-  width: 90%;
-}
-
-.skills-content .right .css::before {
-  width: 60%;
-}
-
-.skills-content .right .js::before {
-  width: 80%;
-}
-
-.skills-content .right .php::before {
-  width: 50%;
-}
-
-.skills-content .right .mysql::before {
-  width: 70%;
+  background: hsl(210.1, 100%, 50%);
 }
 
 /* projects section styling */
 .projects .projects-content .card {
   width: calc(33% - 20px);
-  background: #003970;
+  height: 250px;
+  background: hsl(210.1, 100%, 50%);
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
+  margin-top: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .projects .projects-content .card:hover {
-  background: #0866f1;
+  background: hsl(195.1, 100%, 50%);
 }
 
 .projects .projects-content .card .box {
@@ -423,12 +418,12 @@ nav {
 
 .projects .projects-content .card i {
   font-size: 50px;
-  color: #0866f1;
+  color: hsl(195.1, 100%, 50%);
   transition: color 0.3s ease;
 }
 
 .projects .projects-content .card:hover i {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .projects .projects-content .card .text {
@@ -454,19 +449,19 @@ nav {
 
 .timeline .timeline-content .left a {
   display: inline-block;
-  background: #0866f1;
-  color: #fff;
+  background: hsl(210.1, 100%, 50%);
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #0866f1;
+  border: 2px solid hsl(210.1, 100%, 50%);
   transition: all 0.3s ease;
 }
 
 .timeline .timeline-content .left a:hover {
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
   background: none;
 }
 
@@ -489,7 +484,7 @@ nav {
 .timeline .timeline-content .right .line {
   height: 5px;
   width: 100%;
-  background: lightgrey;
+  background: hsl(0, 0%, 75.3%);
   position: relative;
 }
 
@@ -499,13 +494,13 @@ nav {
   height: 100%;
   left: 0;
   top: 0;
-  background: #0866f1;
+  background: hsl(210.1, 100%, 50%);
 }
 
 /* Courses section */
 .courses .courses-content .card {
   width: calc(33% - 20px);
-  background: #003970;
+  background: hsl(210.1, 100%, 50%);
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
@@ -514,7 +509,7 @@ nav {
 }
 
 .courses .courses-content .card:hover {
-  background: #0866f1;
+  background: hsl(195.1, 100%, 50%);
 }
 
 .courses .courses-content .card .box {
@@ -527,12 +522,12 @@ nav {
 
 .courses .courses-content .card i {
   font-size: 50px;
-  color: #0866f1;
+  color: hsl(195.1, 100%, 50%);
   transition: color 0.3s ease;
 }
 
 .courses .courses-content .card:hover i {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .courses .courses-content .card .text {
@@ -572,7 +567,7 @@ nav {
 
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
 }
 
 .contact .contact-content .info .head {
@@ -580,7 +575,7 @@ nav {
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: hsl(0, 0%, 45.9%);
 }
 
 .contact .right form .fields {
@@ -611,7 +606,7 @@ nav {
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
-  border: 1px solid lightgrey;
+  border: 1px solid hsl(0, 0%, 75.3%);
   border-radius: 6px;
   outline: none;
   padding: 0 15px;
@@ -622,7 +617,7 @@ nav {
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
+  border-color: hsl(0, 0%, 45.9%);
 }
 
 .contact .right form .textarea textarea {
@@ -638,9 +633,9 @@ nav {
 .contact .right form .button button {
   width: 100%;
   height: 100%;
-  border: 2px solid #0866f1;
-  background: #0866f1;
-  color: #fff;
+  border: 2px solid hsl(210.1, 100%, 50%);
+  background: hsl(210.1, 100%, 50%);
+  color: hsl(0, 0%, 100%);
   outline: none;
   font-size: 20px;
   font-weight: 500;
@@ -650,32 +645,32 @@ nav {
 }
 
 .contact .right form .button button:hover {
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
   background: none;
 }
 
 a:link {
-  color: #003970;
+  color: hsl(210.1, 100%, 50%);
 }
 
 a:visited {
-  color: hsl(0, 0%, 3.1%);
+  color: hsl(233.4, 100%, 26.9%);
 }
 
 a:hover {
-  color: #0866f1;
+  color: hsl(195.1, 100%, 50%);
 }
 
 /* footer section styling */
 footer {
   background: hsl(0, 0%, 3.1%);
   padding: 15px 23px;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
 
 footer span a {
-  color: #0866f1;
+  color: hsl(210.1, 100%, 50%);
   text-decoration: none;
 }
 
