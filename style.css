@@ -327,6 +327,7 @@ nav {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .skills .skills-content .left p {
@@ -337,6 +338,7 @@ nav {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .skills .skills-content .center .info {
@@ -371,6 +373,7 @@ nav {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .skills .skills-content .right .info {
@@ -401,6 +404,22 @@ nav {
   background: hsl(210.1, 100%, 50%);
 }
 
+.skills .tech-icons {
+  position: relative;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px 1px #007fff;
+  transition: all 0.3s ease;
+}
+
+.skills .tech-icons:hover {
+  box-shadow: 0 0 5px 1px hsl(209.5, 100%, 22%);
+  transform: scale(1.05)
+}
+
 /* projects section styling */
 .projects .projects-content .card {
   width: calc(33% - 20px);
@@ -426,14 +445,12 @@ nav {
   transform: scale(1.05);
 }
 
-.projects .projects-content .card i {
+.projects .projects-content .card .project-img {
+  width: 100%;
+  height: auto;
   font-size: 50px;
   color: hsl(195.1, 100%, 50%);
   transition: color 0.3s ease;
-}
-
-.projects .projects-content .card:hover i {
-  color: hsl(0, 0%, 100%);
 }
 
 .projects .projects-content .card .text {
@@ -578,7 +595,9 @@ nav {
   transform: scale(1.05);
 }
 
-.courses .courses-content .card i {
+.courses .courses-content .card .course-img {
+  width: 100%;
+  height: auto;
   font-size: 50px;
   color: hsl(195.1, 100%, 50%);
   transition: color 0.3s ease;
