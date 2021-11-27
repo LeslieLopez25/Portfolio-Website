@@ -56,9 +56,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -71,9 +73,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -96,9 +100,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -112,9 +118,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -417,19 +425,17 @@ nav {
 
 .skills .tech-icons:hover {
   box-shadow: 0 0 5px 1px hsl(209.5, 100%, 22%);
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 /* projects section styling */
 .projects .projects-content .card {
   width: calc(33% - 20px);
-  height: 250px;
   background: hsl(210.1, 100%, 50%);
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
   margin-top: 30px;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -457,6 +463,25 @@ nav {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+.projects .project-icon {
+  font-size: 2rem;
+  margin-top: 25px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.projects .project-icon:link {
+  color: hsl(233.4, 100%, 26.9%);
+}
+
+.projects .project-icon:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+.projects .project-icon:hover {
+  color: hsl(212.7, 100%, 6.5%);
 }
 
 /* Timeline section */
@@ -524,7 +549,7 @@ nav {
 
 .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   margin: 0 auto;
   position: relative;
   padding: 5rem;
