@@ -56,11 +56,9 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   left: 320px;
   top: 35%;
   position: absolute;
@@ -73,11 +71,9 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   left: 320px;
   top: 35%;
   position: absolute;
@@ -100,11 +96,9 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   right: 320px;
   top: 35%;
   position: absolute;
@@ -118,11 +112,9 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   right: 320px;
   top: 35%;
   position: absolute;
@@ -198,6 +190,7 @@ nav {
   display: flex;
   height: 100vh;
   color: hsl(0, 0%, 100%);
+  -webkit-text-stroke: 1px hsl(209.5, 100%, 22%);
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -494,7 +487,7 @@ nav {
   font-weight: 600;
   margin-bottom: 10px;
   position: relative;
-  left: 420px;
+  left: 485px;
 }
 
 .timeline .timeline-content .left a {
