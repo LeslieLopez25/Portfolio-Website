@@ -463,6 +463,7 @@ nav {
   margin-top: 25px;
   padding-right: 20px;
   cursor: pointer;
+  color: hsl(0, 0%, 100%);
 }
 
 .projects .project-icon:link {
@@ -470,7 +471,7 @@ nav {
 }
 
 .projects .project-icon:visited {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 75.3%);
 }
 
 .projects .project-icon:hover {
