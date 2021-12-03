@@ -56,9 +56,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -71,9 +73,11 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   left: 320px;
   top: 35%;
   position: absolute;
@@ -96,9 +100,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -112,9 +118,11 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   right: 320px;
   top: 35%;
   position: absolute;
@@ -412,12 +420,12 @@ nav {
   height: 50px;
   margin-top: 25px;
   margin-right: 10px;
-  box-shadow: 0 0 5px 1px #007fff;
+  box-shadow: 0 0 5px 1px hsl(195.1, 100%, 50%);
   transition: all 0.3s ease;
 }
 
 .skills .tech-icons:hover {
-  box-shadow: 0 0 5px 1px hsl(209.5, 100%, 22%);
+  box-shadow: 0 0 5px 1px hsl(210.1, 100%, 50%);
   transform: scale(1.05);
 }
 
@@ -488,7 +496,7 @@ nav {
   font-weight: 600;
   margin-bottom: 10px;
   position: relative;
-  left: 485px;
+  left: 410px;
 }
 
 .timeline .timeline-content .left a {
@@ -578,7 +586,7 @@ nav {
   left: -21rem;
   text-align: right;
   min-width: 12rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .dates .date::after {
@@ -914,6 +922,26 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+  .about .title::before,
+  .skills .title::before,
+  .timeline .title::before,
+  .contact .title::before,
+  .about .title::after,
+  .skills .title::after,
+  .timeline .title::after,
+  .contact .title::after {
+    width: 7%;
+  }
+
+  .interests .title::before,
+  .projects .title::before,
+  .courses .title::before,
+  .interests .title::after,
+  .projects .title::after,
+  .courses .title::after {
+    width: 7%;
+  }
+
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -925,6 +953,23 @@ footer span a:hover {
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    left: 5px;
+    bottom: 40px;
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .dates .date h2 {
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .dates .date p {
+    width: max-content;
   }
 
   .contact .right form .fields {
