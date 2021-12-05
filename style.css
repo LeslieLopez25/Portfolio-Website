@@ -585,7 +585,6 @@ nav {
   content: attr(data-date);
   left: -21rem;
   text-align: right;
-  min-width: 12rem;
   font-size: 1rem;
 }
 
@@ -968,8 +967,34 @@ footer span a:hover {
     width: max-content;
   }
 
-  .dates .date p {
-    width: max-content;
+  .data-date {
+    font-size: 10px;
+  }
+
+  .dates ul {
+    position: relative;
+    margin: 0;
+    padding: 2rem;
+    left: 80px;
+  }
+
+  .dates .date::after {
+    position: absolute;
+    left: -40px;
+  }
+
+  .dates .date::before {
+    left: -135px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+  }
+
+  .dates .date {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 200px;
   }
 
   .contact .right form .fields {
