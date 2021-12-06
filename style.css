@@ -56,11 +56,9 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   left: 320px;
   top: 35%;
   position: absolute;
@@ -73,11 +71,9 @@ footer {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   left: 320px;
   top: 35%;
   position: absolute;
@@ -100,11 +96,9 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   right: 320px;
   top: 35%;
   position: absolute;
@@ -118,11 +112,9 @@ section .title {
   display: block;
   width: 80px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   right: 320px;
   top: 35%;
   position: absolute;
@@ -921,24 +913,30 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+
   .about .title::before,
   .skills .title::before,
   .timeline .title::before,
   .contact .title::before,
+  .interests .title::before,
+  .projects .title::before,
+  .courses .title::before {
+    width: 7%;
+    position: absolute;
+    left: 350px;
+  }
+
+
+  .interests .title::after,
+  .projects .title::after,
+  .courses .title::after,
   .about .title::after,
   .skills .title::after,
   .timeline .title::after,
   .contact .title::after {
     width: 7%;
-  }
-
-  .interests .title::before,
-  .projects .title::before,
-  .courses .title::before,
-  .interests .title::after,
-  .projects .title::after,
-  .courses .title::after {
-    width: 7%;
+    position: absolute;
+    right: 350px;
   }
 
   .home .home-content .text-2 {
@@ -954,9 +952,13 @@ footer span a:hover {
     font-size: 19px;
   }
 
+  .skills .tech-icons {
+    left: 105px;
+  }
+
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 5px;
+    left: 70px;
     bottom: 40px;
     font-size: 20px;
     width: max-content;
@@ -975,7 +977,7 @@ footer span a:hover {
     position: relative;
     margin: 0;
     padding: 2rem;
-    left: 80px;
+    left: 150px;
   }
 
   .dates .date::after {
@@ -984,7 +986,7 @@ footer span a:hover {
   }
 
   .dates .date::before {
-    left: -135px;
+    left: -155px;
     font-size: 12px;
     font-weight: bold;
     text-align: left;
