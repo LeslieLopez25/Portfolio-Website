@@ -18,7 +18,7 @@ section {
 }
 
 .max-width {
-  max-width: 1300px;
+  max-width: 1440px;
   padding: 0 80px;
   margin: auto;
 }
@@ -38,8 +38,7 @@ footer {
 .interests .interests-content,
 .skills .skills-content,
 .projects .projects-content,
-.timeline,
-.timeline-content,
+.timeline .timeline-content,
 .courses .courses-content,
 .contact .contact-content {
   display: flex;
@@ -53,30 +52,30 @@ footer {
 .timeline .title::before,
 .contact .title::before {
   content: "";
-  display: block;
-  width: 80px;
+  width: 300px;
   height: 5px;
   background-image: linear-gradient(to right,
       hsl(240, 100%, 10.6%) 0%,
       hsl(209.5, 100%, 22%) 100%);
-  left: 320px;
+  left: 50%;
   top: 35%;
   position: absolute;
+  transform: translateX(-50%);
 }
 
 .interests .title::before,
 .projects .title::before,
 .courses .title::before {
   content: "";
-  display: block;
-  width: 80px;
   height: 5px;
   background-image: linear-gradient(to right,
       hsl(195.1, 100%, 50%) 0%,
       hsl(0, 0%, 75.3%) 100%);
-  left: 320px;
+  width: 300px;
+  left: 50%;
   top: 35%;
   position: absolute;
+  transform: translateX(-50%);
 }
 
 section .title {
@@ -89,37 +88,6 @@ section .title {
   font-family: "Ubuntu", sans-serif;
 }
 
-.interests .title::after,
-.projects .title::after,
-.courses .title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
-  right: 320px;
-  top: 35%;
-  position: absolute;
-}
-
-.about .title::after,
-.skills .title::after,
-.timeline .title::after,
-.contact .title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
-  right: 320px;
-  top: 35%;
-  position: absolute;
-}
-
 /* navbar styling */
 nav {
   background: hsl(209.5, 100%, 22%, 0.5);
@@ -128,7 +96,7 @@ nav {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 100;
   top: 0;
   padding: 20px 0;
   font-family: "Ubuntu", sans-serif;
@@ -210,17 +178,17 @@ nav {
   z-index: 2;
 }
 
-.text-1 {
+.home .home-content .text-1 {
   font-size: 27px;
 }
 
-.text-2 {
+.home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
 
-.text-3 {
+.home .home-content .text-3 {
   color: hsl(209.5, 100%, 22%);
   -webkit-text-stroke: 1px hsl(195.1, 100%, 50%);
   font-weight: 500;
@@ -229,6 +197,16 @@ nav {
 }
 
 /* about section styling */
+.about h2 span,
+.skills h2 span,
+.timeline h2 span,
+.contact h2 span {
+  background: #fff;
+  position: relative;
+  z-index: 5;
+  padding: 0 10px;
+}
+
 .about .about-content .left {
   width: 45%;
 }
@@ -277,6 +255,15 @@ nav {
 .courses {
   color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
+}
+
+.interests h2 span,
+.projects h2 span,
+.courses h2 span {
+  background: hsl(212.7, 100%, 6.5%);
+  position: relative;
+  z-index: 5;
+  padding: 0 10px;
 }
 
 .interests .interests-content .card {
@@ -331,10 +318,6 @@ nav {
   text-align: center;
 }
 
-.skills .skills-content .left p {
-  text-align: justify;
-}
-
 .skills .skills-content .center .text {
   font-size: 20px;
   font-weight: 600;
@@ -342,67 +325,11 @@ nav {
   text-align: center;
 }
 
-.skills .skills-content .center .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skills .skills-content .center span {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.skills .skills-content .center .line {
-  height: 5px;
-  width: 100%;
-  background: hsl(0, 0%, 75.3%);
-  position: relative;
-}
-
-.skills .skills-content .center .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: hsl(210.1, 100%, 50%);
-}
-
 .skills .skills-content .right .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
-}
-
-.skills .skills-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: hsl(0, 0%, 75.3%);
-  position: relative;
-}
-
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: hsl(210.1, 100%, 50%);
 }
 
 .skills .tech-icons {
@@ -479,16 +406,12 @@ nav {
 }
 
 /* Timeline section */
-.timeline .timeline-content .column {
-  width: calc(50% - 30px);
-}
-
 .timeline .timeline-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   position: relative;
-  left: 410px;
+  left: 443px;
 }
 
 .timeline .timeline-content .left a {
@@ -539,6 +462,10 @@ nav {
   left: 0;
   top: 0;
   background: hsl(210.1, 100%, 50%);
+}
+
+.dates {
+  margin-left: 3rem;
 }
 
 .dates ul {
@@ -774,7 +701,7 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1300px) {
+@media (max-width: 1440px) {
   .home .max-width {
     margin-left: 0px;
   }
@@ -871,9 +798,25 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 300px;
+  }
+
   .projects .projects-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+  }
+
+  .dates {
+    position: relative;
+    left: 130px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    bottom: 40px;
+    left: 260px;
   }
 
   .courses .courses-content .card {
@@ -881,6 +824,8 @@ footer span a:hover {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {}
 
 @media (max-width: 690px) {
   .max-width {
@@ -903,8 +848,24 @@ footer span a:hover {
     width: 100%;
   }
 
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 200px;
+  }
+
   .projects .projects-content .card {
     width: 100%;
+  }
+
+  .dates {
+    position: relative;
+    left: 130px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    bottom: 40px;
+    left: 160px;
   }
 
   .courses .courses-content .card {
@@ -913,32 +874,6 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-
-  .about .title::before,
-  .skills .title::before,
-  .timeline .title::before,
-  .contact .title::before,
-  .interests .title::before,
-  .projects .title::before,
-  .courses .title::before {
-    width: 7%;
-    position: absolute;
-    left: 350px;
-  }
-
-
-  .interests .title::after,
-  .projects .title::after,
-  .courses .title::after,
-  .about .title::after,
-  .skills .title::after,
-  .timeline .title::after,
-  .contact .title::after {
-    width: 7%;
-    position: absolute;
-    right: 350px;
-  }
-
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -952,8 +887,9 @@ footer span a:hover {
     font-size: 19px;
   }
 
-  .skills .tech-icons {
-    left: 105px;
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 100px;
   }
 
   .timeline .timeline-content .left .text {
@@ -962,6 +898,10 @@ footer span a:hover {
     bottom: 40px;
     font-size: 20px;
     width: max-content;
+  }
+
+  .dates {
+    margin-left: 0;
   }
 
   .dates .date h2 {
@@ -1006,5 +946,59 @@ footer span a:hover {
   .contact .right form .name,
   .contact .right form .email {
     margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 50px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    left: 0;
+    bottom: 40px;
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .dates {
+    margin-left: -45px;
+  }
+
+  .dates .date h2 {
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .data-date {
+    font-size: 10px;
+  }
+
+  .dates ul {
+    position: relative;
+    margin: 0;
+    padding: 2rem;
+    left: 150px;
+  }
+
+  .dates .date::after {
+    position: absolute;
+    left: -40px;
+  }
+
+  .dates .date::before {
+    left: -155px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+  }
+
+  .dates .date {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 200px;
   }
 }
