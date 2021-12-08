@@ -54,9 +54,11 @@ footer {
   content: "";
   width: 300px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   left: 50%;
   top: 35%;
   position: absolute;
@@ -68,9 +70,11 @@ footer {
 .courses .title::before {
   content: "";
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   width: 300px;
   left: 50%;
   top: 35%;
@@ -701,9 +705,31 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
+  .timeline .timeline-content .left .text {
+    position: relative;
+    left: 480px;
+  }
+
+  .dates {
+    position: relative;
+    left: 100px;
+  }
+
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    left: 415px;
   }
 }
 
@@ -825,7 +851,17 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 200px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    left: 180px;
+  }
+}
 
 @media (max-width: 690px) {
   .max-width {
