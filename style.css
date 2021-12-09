@@ -12,7 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* all similar content styling codes */
+/* All similar content */
+header,
+main,
 section {
   padding: 100px 0;
 }
@@ -54,11 +56,9 @@ footer {
   content: "";
   width: 300px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   left: 50%;
   top: 35%;
   position: absolute;
@@ -70,11 +70,9 @@ footer {
 .courses .title::before {
   content: "";
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   width: 300px;
   left: 50%;
   top: 35%;
@@ -82,6 +80,7 @@ footer {
   transform: translateX(-50%);
 }
 
+main .title,
 section .title {
   position: relative;
   text-align: center;
@@ -92,7 +91,7 @@ section .title {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* navbar styling */
+/* Navbar */
 nav {
   background: hsl(209.5, 100%, 22%, 0.5);
 }
@@ -149,7 +148,7 @@ nav {
   color: hsl(0, 0%, 100%);
 }
 
-/* menu btn styling */
+/* Menu btn */
 .menu-btn {
   color: hsl(0, 0%, 100%);
   font-size: 23px;
@@ -157,7 +156,7 @@ nav {
   display: none;
 }
 
-/* home section styling */
+/* Home */
 .home {
   display: flex;
   height: 100vh;
@@ -200,7 +199,7 @@ nav {
   margin: 5px 0;
 }
 
-/* about section styling */
+/* About */
 .about h2 span,
 .skills h2 span,
 .timeline h2 span,
@@ -253,7 +252,7 @@ nav {
   background: none;
 }
 
-/* interest section styling */
+/* Interests */
 .interests,
 .projects,
 .courses {
@@ -310,7 +309,7 @@ nav {
   margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* Skills */
 .skills .skills-content .column {
   width: calc(30% - 30px);
 }
@@ -352,7 +351,7 @@ nav {
   transform: scale(1.05);
 }
 
-/* projects section styling */
+/* Projects */
 .projects .projects-content .card {
   width: calc(33% - 20px);
   background: hsl(210.1, 100%, 50%);
@@ -409,7 +408,7 @@ nav {
   color: hsl(212.7, 100%, 6.5%);
 }
 
-/* Timeline section */
+/* Timeline */
 .timeline .timeline-content .left .text {
   font-size: 20px;
   font-weight: 600;
@@ -521,7 +520,7 @@ nav {
   background-color: hsl(210.1, 100%, 50%);
 }
 
-/* Courses section */
+/* Courses */
 .courses .courses-content .card {
   width: calc(33% - 20px);
   background: hsl(210.1, 100%, 50%);
@@ -562,7 +561,7 @@ nav {
   margin: 10px 0 7px 0;
 }
 
-/* contact section styling */
+/* Contact */
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -687,7 +686,7 @@ a:hover {
   color: hsl(195.1, 100%, 50%);
 }
 
-/* footer section styling */
+/* Footer */
 footer {
   background: hsl(0, 0%, 3.1%);
   padding: 15px 23px;
@@ -704,7 +703,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/* responsive media query start */
+/* Media queries */
 @media (min-width: 1440px) {
   .timeline .timeline-content .left .text {
     position: relative;
@@ -993,14 +992,14 @@ footer span a:hover {
 
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 0;
+    left: 5px;
     bottom: 40px;
     font-size: 20px;
     width: max-content;
   }
 
   .dates {
-    margin-left: -45px;
+    margin-left: -175px;
   }
 
   .dates .date h2 {
