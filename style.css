@@ -166,7 +166,7 @@ nav {
   font-family: "Ubuntu", sans-serif;
 }
 
-.bg-img {
+.home .bg-img {
   width: 100%;
   min-height: 500px;
   height: 100vh;
@@ -204,7 +204,7 @@ nav {
 .skills h2 span,
 .timeline h2 span,
 .contact h2 span {
-  background: #fff;
+  background: hsl(0, 0%, 100%);
   position: relative;
   z-index: 5;
   padding: 0 10px;
@@ -705,19 +705,19 @@ footer span a:hover {
 
 /* Media queries */
 @media (min-width: 1440px) {
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 60px;
+  }
+
   .timeline .timeline-content .left .text {
     position: relative;
     left: 480px;
   }
 
-  .dates {
+  .timeline .timeline-content .dates {
     position: relative;
     left: 100px;
-  }
-
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 60px;
   }
 }
 
@@ -737,11 +737,38 @@ footer span a:hover {
     height: 350px;
     width: 350px;
   }
+
+  .skills .skills-content .tech-icons {
+    position: relative;
+    left: 10px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    bottom: 30px;
+    left: 315px;
+  }
+
+  .timeline .timeline-content .dates {
+    position: relative;
+    left: 100px;
+  }
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
+  }
+
+  .timeline .timeline-content .left .text {
+    position: relative;
+    bottom: 30px;
+    left: 290px;
+  }
+
+  .timeline .timeline-content .dates {
+    position: relative;
+    left: 100px;
   }
 }
 
@@ -833,15 +860,15 @@ footer span a:hover {
     margin-bottom: 20px;
   }
 
-  .dates {
-    position: relative;
-    left: 130px;
-  }
-
   .timeline .timeline-content .left .text {
     position: relative;
     bottom: 40px;
     left: 260px;
+  }
+
+  .timeline .timeline-content .dates {
+    position: relative;
+    left: 130px;
   }
 
   .courses .courses-content .card {
@@ -892,7 +919,7 @@ footer span a:hover {
     width: 100%;
   }
 
-  .dates {
+  .timeline .timeline-content .dates {
     position: relative;
     left: 130px;
   }
@@ -935,32 +962,33 @@ footer span a:hover {
     width: max-content;
   }
 
-  .dates {
-    margin-left: 0;
+  .timeline .timeline-content .dates {
+    position: relative;
+    left: -50px;
   }
 
-  .dates .date h2 {
+  .timeline .dates .date h2 {
     font-size: 20px;
     width: max-content;
   }
 
-  .data-date {
+  .timeline .data-date {
     font-size: 10px;
   }
 
-  .dates ul {
+  .timeline .dates ul {
     position: relative;
     margin: 0;
     padding: 2rem;
     left: 150px;
   }
 
-  .dates .date::after {
+  .timeline .dates .date::after {
     position: absolute;
     left: -40px;
   }
 
-  .dates .date::before {
+  .timeline .dates .date::before {
     left: -155px;
     font-size: 12px;
     font-weight: bold;
@@ -968,7 +996,7 @@ footer span a:hover {
     width: 100px;
   }
 
-  .dates .date {
+  .timeline .dates .date {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 200px;
@@ -998,32 +1026,32 @@ footer span a:hover {
     width: max-content;
   }
 
-  .dates {
+  .timeline .timeline-content .dates {
     margin-left: -175px;
   }
 
-  .dates .date h2 {
+  .timeline .dates .date h2 {
     font-size: 20px;
     width: max-content;
   }
 
-  .data-date {
+  .timeline .data-date {
     font-size: 10px;
   }
 
-  .dates ul {
+  .timeline .dates ul {
     position: relative;
     margin: 0;
     padding: 2rem;
     left: 150px;
   }
 
-  .dates .date::after {
+  .timeline .dates .date::after {
     position: absolute;
     left: -40px;
   }
 
-  .dates .date::before {
+  .timeline .dates .date::before {
     left: -155px;
     font-size: 12px;
     font-weight: bold;
@@ -1031,7 +1059,7 @@ footer span a:hover {
     width: 100px;
   }
 
-  .dates .date {
+  .timeline .dates .date {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 200px;
