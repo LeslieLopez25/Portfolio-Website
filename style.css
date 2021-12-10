@@ -467,11 +467,11 @@ nav {
   background: hsl(210.1, 100%, 50%);
 }
 
-.dates {
+.timeline .timeline-content .dates {
   margin-left: 3rem;
 }
 
-.dates ul {
+.timeline .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
   border-radius: 0.8rem;
   margin: 0 auto;
@@ -482,35 +482,35 @@ nav {
   width: 70%;
 }
 
-.dates .date {
+.timeline .dates .date {
   border-bottom: 1px solid hsl(233.4, 100%, 26.9%);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
 }
 
-.dates .date:last-of-type {
+.timeline .dates .date:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
 
-.dates .date::before,
-.dates .date::after {
+.timeline .dates .date::before,
+.timeline .dates .date::after {
   position: absolute;
   display: block;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.dates .date::before {
+.timeline .dates .date::before {
   content: attr(data-date);
   left: -21rem;
   text-align: right;
   font-size: 1rem;
 }
 
-.dates .date::after {
+.timeline .dates .date::after {
   content: "";
   box-shadow: 0 0 0 4px hsl(212.7, 100%, 6.5%);
   border-radius: 100%;
