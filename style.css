@@ -473,13 +473,20 @@ nav {
 
 .timeline .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
-  border-radius: 0.8rem;
+  border-radius: .8rem;
+  background: hsl(0, 0%, 75.3%, 0.2);
   margin: 0 auto;
   position: relative;
   padding: 5rem;
   list-style: none;
   text-align: left;
   width: 70%;
+}
+
+.timeline h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .timeline .dates .date {
@@ -977,10 +984,10 @@ footer span a:hover {
   }
 
   .timeline .dates ul {
-    position: relative;
     margin: 0;
     padding: 2rem;
     left: 150px;
+    width: 90%;
   }
 
   .timeline .dates .date::after {
@@ -1040,10 +1047,10 @@ footer span a:hover {
   }
 
   .timeline .dates ul {
-    position: relative;
-    margin: 0;
+    margin: 0 0 0 auto;
     padding: 2rem;
-    left: 150px;
+    left: 295px;
+    width: 90%;
   }
 
   .timeline .dates .date::after {
