@@ -56,9 +56,11 @@ footer {
   content: "";
   width: 300px;
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(240, 100%, 10.6%) 0%,
-      hsl(209.5, 100%, 22%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 100%, 10.6%) 0%,
+    hsl(209.5, 100%, 22%) 100%
+  );
   left: 50%;
   top: 35%;
   position: absolute;
@@ -70,9 +72,11 @@ footer {
 .courses .title::before {
   content: "";
   height: 5px;
-  background-image: linear-gradient(to right,
-      hsl(195.1, 100%, 50%) 0%,
-      hsl(0, 0%, 75.3%) 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(195.1, 100%, 50%) 0%,
+    hsl(0, 0%, 75.3%) 100%
+  );
   width: 300px;
   left: 50%;
   top: 35%;
@@ -409,72 +413,25 @@ nav {
 }
 
 /* Timeline */
+.timeline {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .timeline .timeline-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   position: relative;
-  left: 443px;
-}
-
-.timeline .timeline-content .left a {
-  display: inline-block;
-  background: hsl(210.1, 100%, 50%);
-  color: hsl(0, 0%, 100%);
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid hsl(210.1, 100%, 50%);
-  transition: all 0.3s ease;
-}
-
-.timeline .timeline-content .left a:hover {
-  color: hsl(210.1, 100%, 50%);
-  background: none;
-}
-
-.timeline .timeline-content .right .bars {
-  margin-bottom: 15px;
-}
-
-.timeline .timeline-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.timeline .timeline-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.timeline .timeline-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: hsl(0, 0%, 75.3%);
-  position: relative;
-}
-
-.timeline .timeline-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: hsl(210.1, 100%, 50%);
-}
-
-.timeline .timeline-content .dates {
-  margin-left: 3rem;
+  left: 370px;
 }
 
 .timeline .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
-  border-radius: .8rem;
-  background: hsl(0, 0%, 75.3%, 0.2);
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 75.3%, 0.2);
   margin: 0 auto;
   position: relative;
   padding: 5rem;
@@ -719,7 +676,7 @@ footer span a:hover {
 
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 480px;
+    left: 410px;
   }
 
   .timeline .timeline-content .dates {
@@ -735,7 +692,7 @@ footer span a:hover {
 
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 415px;
+    left: 350px;
   }
 }
 
@@ -753,7 +710,7 @@ footer span a:hover {
   .timeline .timeline-content .left .text {
     position: relative;
     bottom: 30px;
-    left: 315px;
+    left: 260px;
   }
 
   .timeline .timeline-content .dates {
@@ -770,7 +727,7 @@ footer span a:hover {
   .timeline .timeline-content .left .text {
     position: relative;
     bottom: 30px;
-    left: 290px;
+    left: 240px;
   }
 
   .timeline .timeline-content .dates {
@@ -870,7 +827,7 @@ footer span a:hover {
   .timeline .timeline-content .left .text {
     position: relative;
     bottom: 40px;
-    left: 260px;
+    left: 220px;
   }
 
   .timeline .timeline-content .dates {
@@ -892,7 +849,7 @@ footer span a:hover {
 
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 180px;
+    left: 140px;
   }
 }
 
@@ -928,13 +885,25 @@ footer span a:hover {
 
   .timeline .timeline-content .dates {
     position: relative;
-    left: 130px;
+    left: 0px;
+    width: 50%;
   }
 
   .timeline .timeline-content .left .text {
     position: relative;
     bottom: 40px;
-    left: 160px;
+    left: 130px;
+  }
+
+  .timeline .dates ul {
+    width: 450px;
+    left: 100px;
+  }
+
+  .timeline .dates .date::before {
+    width: 50%;
+    left: -230px;
+    text-align: center;
   }
 
   .courses .courses-content .card {
@@ -976,7 +945,7 @@ footer span a:hover {
 
   .timeline .dates .date h2 {
     font-size: 20px;
-    width: max-content;
+    width: 100%;
   }
 
   .timeline .data-date {
@@ -987,7 +956,7 @@ footer span a:hover {
     margin: 0;
     padding: 2rem;
     left: 150px;
-    width: 90%;
+    width: 235px;
   }
 
   .timeline .dates .date::after {
@@ -1027,14 +996,14 @@ footer span a:hover {
 
   .timeline .timeline-content .left .text {
     position: relative;
-    left: 5px;
+    left: -10px;
     bottom: 40px;
     font-size: 20px;
     width: max-content;
   }
 
   .timeline .timeline-content .dates {
-    margin-left: -175px;
+    left: -210px;
   }
 
   .timeline .dates .date h2 {
@@ -1047,10 +1016,8 @@ footer span a:hover {
   }
 
   .timeline .dates ul {
-    margin: 0 0 0 auto;
-    padding: 2rem;
     left: 295px;
-    width: 90%;
+    width: 235px;
   }
 
   .timeline .dates .date::after {
