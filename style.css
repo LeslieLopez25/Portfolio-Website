@@ -56,11 +56,9 @@ footer {
   content: "";
   width: 300px;
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 100%, 10.6%) 0%,
-    hsl(209.5, 100%, 22%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(240, 100%, 10.6%) 0%,
+      hsl(209.5, 100%, 22%) 100%);
   left: 50%;
   top: 35%;
   position: absolute;
@@ -72,11 +70,9 @@ footer {
 .courses .title::before {
   content: "";
   height: 5px;
-  background-image: linear-gradient(
-    to right,
-    hsl(195.1, 100%, 50%) 0%,
-    hsl(0, 0%, 75.3%) 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(195.1, 100%, 50%) 0%,
+      hsl(0, 0%, 75.3%) 100%);
   width: 300px;
   left: 50%;
   top: 35%;
@@ -262,6 +258,7 @@ nav {
 .courses {
   color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
+  background-image: url("./images/checkered-pattern.png");
 }
 
 .interests h2 span,
@@ -653,6 +650,7 @@ a:hover {
 /* Footer */
 footer {
   background: hsl(0, 0%, 3.1%);
+  background-image: url("./images/checkered-pattern.png");
   padding: 15px 23px;
   color: hsl(0, 0%, 100%);
   text-align: center;
