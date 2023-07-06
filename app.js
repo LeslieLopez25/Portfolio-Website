@@ -1,5 +1,5 @@
 // Sticky navbar
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -17,7 +17,7 @@ function scrollFunction() {
 const menu = document.querySelector(".mobile-menu");
 const menuLinks = document.querySelector(".menu");
 
-menu.addEventListener("click", function() {
+menu.addEventListener("click", function () {
   menu.classList.toggle("active");
   menuLinks.classList.toggle("active");
 });
@@ -26,7 +26,7 @@ menu.addEventListener("click", function() {
 new hoverEffect({
   parent: document.querySelector(".bg-img"),
   intensity: 0.3,
-  image1: "/images/img-1.jpg",
-  image2: "./images/img-2.jpg",
-  displacementImage: "/images/leaves.jpg"
+  image1: "./assets/images/img-1.jpg",
+  image2: "./assets/images/img-2.JPG",
+  displacementImage: "./assets/images/leaf.jpg",
 });

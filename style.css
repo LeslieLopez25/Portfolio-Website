@@ -258,7 +258,7 @@ nav {
 .courses {
   color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
-  background-image: url("./images/checkered-pattern.png");
+  background-image: url("./assets/images/checkered-pattern.png");
 }
 
 .interests h2 span,
@@ -650,7 +650,7 @@ a:hover {
 /* Footer */
 footer {
   background: hsl(0, 0%, 3.1%);
-  background-image: url("./images/checkered-pattern.png");
+  background-image: url("./assets/images/checkered-pattern.png");
   padding: 15px 23px;
   color: hsl(0, 0%, 100%);
   text-align: center;
