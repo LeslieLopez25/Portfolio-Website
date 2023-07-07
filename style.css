@@ -389,24 +389,38 @@ nav {
   margin: 10px 0 7px 0;
 }
 
-.projects .project-icon {
-  font-size: 2rem;
-  margin-top: 25px;
-  padding-right: 20px;
-  cursor: pointer;
-  color: hsl(0, 0%, 100%);
+.projects .btn-code {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  background: #000F21;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
 }
 
-.projects .project-icon:link {
-  color: hsl(233.4, 100%, 26.9%);
+.projects .btn-code:hover {
+  background: none;
+  border: #000F21 solid 2px;
+  text-decoration: none;
 }
 
-.projects .project-icon:visited {
-  color: hsl(0, 0%, 75.3%);
+.projects .btn-demo {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  background: none;
+  border: #000F21 solid 2px;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
 }
 
-.projects .project-icon:hover {
-  color: hsl(212.7, 100%, 6.5%);
+.projects .btn-demo:hover {
+  background: #000F21;
+  text-decoration: none;
 }
 
 /* Timeline */
@@ -429,6 +443,7 @@ nav {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
   border-radius: 0.8rem;
   background-color: hsl(0, 0%, 75.3%, 0.2);
+  background-image: url("./assets/images/checkered-pattern.png");
   margin: 0 auto;
   position: relative;
   padding: 5rem;
