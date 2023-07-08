@@ -363,24 +363,17 @@ nav {
   transition: all 0.3s ease;
 }
 
-.projects .projects-content .card:hover {
-  background: hsl(195.1, 100%, 50%);
-}
-
 .projects .projects-content .card .box {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .projects .projects-content .card:hover .box {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .projects .projects-content .card .project-img {
   width: 100%;
   height: auto;
-  font-size: 50px;
-  color: hsl(195.1, 100%, 50%);
-  transition: color 0.3s ease;
 }
 
 .projects .projects-content .card .text {
@@ -389,38 +382,34 @@ nav {
   margin: 10px 0 7px 0;
 }
 
+.projects .projects-content .card p {
+  padding-bottom: 25px;
+}
+
 .projects .btn-code {
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
   border-radius: 4px;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   background: #000F21;
+  border: #000F21 solid 2px;
   padding: 10px 15px 10px 15px;
-  text-decoration: none;
 }
 
 .projects .btn-code:hover {
   background: none;
   border: #000F21 solid 2px;
-  text-decoration: none;
 }
 
 .projects .btn-demo {
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
   border-radius: 4px;
   color: #fff;
-  font-size: 20px;
-  background: none;
+  font-size: 16px;
   border: #000F21 solid 2px;
   padding: 10px 15px 10px 15px;
-  text-decoration: none;
 }
 
 .projects .btn-demo:hover {
   background: #000F21;
-  text-decoration: none;
 }
 
 /* Timeline */
