@@ -272,7 +272,6 @@ nav {
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
-  transition: all 0.3s ease;
 }
 
 .interests .interests-content .card .box {
@@ -344,7 +343,6 @@ nav {
   border-radius: 6px;
   padding: 20px 25px;
   margin-top: 30px;
-  transition: all 0.3s ease;
 }
 
 .projects .projects-content .card .box {
@@ -477,31 +475,19 @@ nav {
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.courses .courses-content .card:hover {
-  background: hsl(195.1, 100%, 50%);
 }
 
 .courses .courses-content .card .box {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .courses .courses-content .card:hover .box {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .courses .courses-content .card .course-img {
   width: 100%;
   height: auto;
-  font-size: 50px;
-  color: hsl(195.1, 100%, 50%);
-  transition: color 0.3s ease;
-}
-
-.courses .courses-content .card:hover i {
-  color: hsl(0, 0%, 100%);
 }
 
 .courses .courses-content .card .text {
