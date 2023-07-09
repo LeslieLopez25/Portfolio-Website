@@ -52,17 +52,7 @@ footer {
 .about .title::before,
 .skills .title::before,
 .timeline .title::before,
-.contact .title::before {
-  content: "";
-  width: 300px;
-  height: 5px;
-  background: hsl(209.5, 100%, 22%);
-  left: 50%;
-  top: 35%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
+.contact .title::before,
 .interests .title::before,
 .projects .title::before,
 .courses .title::before {
@@ -74,6 +64,22 @@ footer {
   top: 35%;
   position: absolute;
   transform: translateX(-50%);
+}
+
+.about,
+.skills,
+.timeline,
+.contact {
+  color: hsl(0, 0%, 100%);
+  background: #002e63;
+}
+
+.interests,
+.projects,
+.courses {
+  color: hsl(0, 0%, 100%);
+  background: hsl(212.7, 100%, 6.5%);
+  background-image: url("./assets/images/checkered-pattern.png");
 }
 
 main .title,
@@ -119,7 +125,7 @@ nav {
 }
 
 .navbar .logo span {
-  color: hsl(195.1, 100%, 50%);
+  color: #002e63;
 }
 
 .navbar .menu li {
@@ -200,7 +206,7 @@ nav {
 .skills h2 span,
 .timeline h2 span,
 .contact h2 span {
-  background: hsl(0, 0%, 100%);
+  background: #002e63;
   position: relative;
   z-index: 5;
   padding: 0 10px;
@@ -249,14 +255,6 @@ nav {
 }
 
 /* Interests */
-.interests,
-.projects,
-.courses {
-  color: hsl(0, 0%, 100%);
-  background: hsl(212.7, 100%, 6.5%);
-  background-image: url("./assets/images/checkered-pattern.png");
-}
-
 .interests h2 span,
 .projects h2 span,
 .courses h2 span {

@@ -6,7 +6,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("sticky").style.background =
-      "linear-gradient(to right, hsl(240,100%,10.6%), hsl(210.1,100%,50%))";
+      "linear-gradient(to right, hsl(195.1, 100%, 50%), hsl(210.1,100%,50%))";
   } else {
     document.getElementById("sticky").style.background =
       "hsl(209.5, 100%, 22%, 0.5)";
