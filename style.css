@@ -58,7 +58,7 @@ footer {
 .courses .title::before {
   content: "";
   height: 5px;
-  background: hsl(195.1, 100%, 50%);
+  background: hsl(210.1, 100%, 50%);
   width: 300px;
   left: 50%;
   top: 35%;
@@ -66,20 +66,39 @@ footer {
   transform: translateX(-50%);
 }
 
+.interests,
+.projects,
+.courses,
 .about,
 .skills,
 .timeline,
 .contact {
   color: hsl(0, 0%, 100%);
-  background: #002e63;
-}
-
-.interests,
-.projects,
-.courses {
-  color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
   background-image: url("./assets/images/checkered-pattern.png");
+}
+
+.about h2 span,
+.skills h2 span,
+.timeline h2 span,
+.contact h2 span,
+.interests h2 span,
+.projects h2 span,
+.courses h2 span {
+  background: hsl(212.7, 100%, 6.5%);
+  position: relative;
+  z-index: 5;
+  padding: 0 10px;
+}
+
+.interests .interests-content .card,
+.projects .projects-content .card,
+.courses .courses-content .card {
+  width: calc(33% - 20px);
+  background: #002e63;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
 }
 
 main .title,
@@ -202,16 +221,6 @@ nav {
 }
 
 /* About */
-.about h2 span,
-.skills h2 span,
-.timeline h2 span,
-.contact h2 span {
-  background: #002e63;
-  position: relative;
-  z-index: 5;
-  padding: 0 10px;
-}
-
 .about .about-content .left {
   width: 45%;
 }
@@ -255,23 +264,6 @@ nav {
 }
 
 /* Interests */
-.interests h2 span,
-.projects h2 span,
-.courses h2 span {
-  background: hsl(212.7, 100%, 6.5%);
-  position: relative;
-  z-index: 5;
-  padding: 0 10px;
-}
-
-.interests .interests-content .card {
-  width: calc(33% - 20px);
-  background: hsl(210.1, 100%, 50%);
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-}
-
 .interests .interests-content .card .box {
   transition: all 0.2s ease;
 }
@@ -334,15 +326,6 @@ nav {
 }
 
 /* Projects */
-.projects .projects-content .card {
-  width: calc(33% - 20px);
-  background: hsl(210.1, 100%, 50%);
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  margin-top: 30px;
-}
-
 .projects .projects-content .card .box {
   transition: all 0.2s ease;
 }
@@ -394,10 +377,11 @@ nav {
 
 /* Timeline */
 .timeline {
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
+  padding-left: 150px;
 }
 
 .timeline .timeline-content .left .text {
@@ -467,11 +451,6 @@ nav {
 
 /* Courses */
 .courses .courses-content .card {
-  width: calc(33% - 20px);
-  background: hsl(210.1, 100%, 50%);
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
   cursor: pointer;
 }
 
@@ -621,8 +600,7 @@ a:hover {
 
 /* Footer */
 footer {
-  background: hsl(0, 0%, 3.1%);
-  background-image: url("./assets/images/checkered-pattern.png");
+  background: hsl(210.1, 100%, 50%);
   padding: 15px 23px;
   color: hsl(0, 0%, 100%);
   text-align: center;
