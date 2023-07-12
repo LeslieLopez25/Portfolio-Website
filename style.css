@@ -162,7 +162,7 @@ nav {
 }
 
 .navbar .menu li a:hover {
-  color: hsl(195.1, 100%, 50%);
+  color: #002e63;
 }
 
 .navbar #sticky .menu li a:hover {
@@ -310,19 +310,19 @@ nav {
 }
 
 .skills .tech-icons {
+  background-color: #002e63;
   position: relative;
   left: 40px;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin-top: 25px;
   margin-right: 10px;
-  box-shadow: 0 0 5px 1px hsl(195.1, 100%, 50%);
+  box-shadow: 0 0 5px 1px hsl(210.1, 100%, 50%);
   transition: all 0.3s ease;
 }
 
 .skills .tech-icons:hover {
-  box-shadow: 0 0 5px 1px hsl(210.1, 100%, 50%);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Projects */
@@ -353,26 +353,26 @@ nav {
   border-radius: 4px;
   color: #fff;
   font-size: 16px;
-  background: #000F21;
-  border: #000F21 solid 2px;
+  background: hsl(210.1, 100%, 50%);
+  border: hsl(210.1, 100%, 50%) solid 2px;
   padding: 10px 15px 10px 15px;
 }
 
 .projects .btn-code:hover {
   background: none;
-  border: #000F21 solid 2px;
+  border: hsl(210.1, 100%, 50%) solid 2px;
 }
 
 .projects .btn-demo {
   border-radius: 4px;
   color: #fff;
   font-size: 16px;
-  border: #000F21 solid 2px;
+  border: hsl(210.1, 100%, 50%) solid 2px;
   padding: 10px 15px 10px 15px;
 }
 
 .projects .btn-demo:hover {
-  background: #000F21;
+  background: hsl(210.1, 100%, 50%);
 }
 
 /* Timeline */
@@ -395,7 +395,7 @@ nav {
 .timeline .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
   border-radius: 0.8rem;
-  background-color: hsl(0, 0%, 75.3%, 0.2);
+  background-color: #002e63;
   background-image: url("./assets/images/checkered-pattern.png");
   margin: 0 auto;
   position: relative;
@@ -412,7 +412,7 @@ nav {
 }
 
 .timeline .dates .date {
-  border-bottom: 1px solid hsl(233.4, 100%, 26.9%);
+  border-bottom: 1px solid hsl(210.1, 100%, 50%);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
@@ -441,7 +441,7 @@ nav {
 
 .timeline .dates .date::after {
   content: "";
-  box-shadow: 0 0 0 4px hsl(212.7, 100%, 6.5%);
+  box-shadow: 0 0 0 4px hsl(233.4, 100%, 26.9%);
   border-radius: 100%;
   left: -5.5rem;
   height: 0.8rem;
