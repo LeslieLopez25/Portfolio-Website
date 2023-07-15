@@ -497,6 +497,10 @@ nav {
   display: flex;
   height: 65px;
   align-items: center;
+  background-color: #002e63;
+  margin-top: 15px;
+  padding-left: 15px;
+  border-radius: 4px;
 }
 
 .contact .contact-content .row .info {
@@ -509,11 +513,13 @@ nav {
 }
 
 .contact .contact-content .info .head {
+  font-size: 17px;
   font-weight: 500;
 }
 
 .contact .contact-content .info .sub-title {
-  color: hsl(0, 0%, 45.9%);
+  color: hsl(210.1, 100%, 50%, 0.7);
+  font-size: 15px;
 }
 
 .contact .right form .fields {
@@ -592,11 +598,11 @@ a:link {
 }
 
 a:visited {
-  color: hsl(233.4, 100%, 26.9%);
+  color: #002e63;
 }
 
 a:hover {
-  color: hsl(195.1, 100%, 50%);
+  color: hsl(212.7, 100%, 6.5%);
 }
 
 /* Footer */
