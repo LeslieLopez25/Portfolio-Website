@@ -480,13 +480,9 @@ nav {
 }
 
 .contact .contact-content .text {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 600;
   margin-bottom: 10px;
-}
-
-.contact .contact-content .left p {
-  text-align: justify;
 }
 
 .contact .contact-content .left .icons {
@@ -518,8 +514,8 @@ nav {
 }
 
 .contact .contact-content .info .sub-title {
-  color: hsl(210.1, 100%, 50%, 0.7);
-  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
 }
 
 .contact .right form .fields {
@@ -598,7 +594,7 @@ a:link {
 }
 
 a:visited {
-  color: #002e63;
+  color: hsl(0, 0%, 45.9%);
 }
 
 a:hover {
