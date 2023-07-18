@@ -25,37 +25,28 @@ section {
   margin: auto;
 }
 
-.about,
-.interests,
-.skills,
-.projects,
-.timeline,
-.courses,
-.contact,
+header,
+main,
+section,
 footer {
   font-family: "Poppins", sans-serif;
 }
 
-.about .about-content,
-.interests .interests-content,
-.skills .skills-content,
-.projects .projects-content,
-.timeline .timeline-content,
-.courses .courses-content,
-.contact .contact-content {
+main .about-content,
+section .interests-content,
+.skills-content,
+.projects-content,
+.timeline-content,
+.courses-content,
+.contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.about .title::before,
-.skills .title::before,
-.timeline .title::before,
-.contact .title::before,
-.interests .title::before,
-.projects .title::before,
-.courses .title::before {
+main .title::before,
+section .title::before {
   content: "";
   height: 5px;
   background: hsl(210.1, 100%, 50%);
@@ -66,34 +57,24 @@ footer {
   transform: translateX(-50%);
 }
 
-.interests,
-.projects,
-.courses,
-.about,
-.skills,
-.timeline,
-.contact {
+main,
+section {
   color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
   background-image: url("./assets/images/checkered-pattern.png");
 }
 
-.about h2 span,
-.skills h2 span,
-.timeline h2 span,
-.contact h2 span,
-.interests h2 span,
-.projects h2 span,
-.courses h2 span {
+main h2 span,
+section h2 span {
   background: hsl(212.7, 100%, 6.5%);
   position: relative;
   z-index: 5;
   padding: 0 10px;
 }
 
-.interests .interests-content .card,
-.projects .projects-content .card,
-.courses .courses-content .card {
+section .interests-content .card,
+.projects-content .card,
+.courses-content .card {
   width: calc(33% - 20px);
   background: #002e63;
   text-align: center;
