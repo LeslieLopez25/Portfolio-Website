@@ -94,6 +94,25 @@ section .title {
   font-family: "Ubuntu", sans-serif;
 }
 
+.interests .interests-content .card .box,
+.projects .projects-content .card .box,
+.courses .courses-content .card .box {
+  transition: all 0.2s ease;
+}
+
+.interests .interests-content .card:hover .box,
+.projects .projects-content .card:hover .box,
+.courses .courses-content .card:hover .box,
+.skills .tech-icons:hover {
+  transform: scale(1.02);
+}
+
+.projects .projects-content .card .project-img,
+.courses .courses-content .card .course-img {
+  width: 100%;
+  height: auto;
+}
+
 /* Navbar */
 nav {
   background: hsl(209.5, 100%, 22%, 0.5);
@@ -246,14 +265,6 @@ nav {
 }
 
 /* Interests */
-.interests .interests-content .card .box {
-  transition: all 0.2s ease;
-}
-
-.interests .interests-content .card:hover .box {
-  transform: scale(1.02);
-}
-
 .interests .interests-content .card .interests-imgs {
   width: 130px;
   height: 130px;
@@ -303,24 +314,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.skills .tech-icons:hover {
-  transform: scale(1.02);
-}
-
 /* Projects */
-.projects .projects-content .card .box {
-  transition: all 0.2s ease;
-}
-
-.projects .projects-content .card:hover .box {
-  transform: scale(1.02);
-}
-
-.projects .projects-content .card .project-img {
-  width: 100%;
-  height: auto;
-}
-
 .projects .projects-content .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -434,19 +428,6 @@ nav {
 /* Courses */
 .courses .courses-content .card {
   cursor: pointer;
-}
-
-.courses .courses-content .card .box {
-  transition: all 0.2s ease;
-}
-
-.courses .courses-content .card:hover .box {
-  transform: scale(1.02);
-}
-
-.courses .courses-content .card .course-img {
-  width: 100%;
-  height: auto;
 }
 
 .courses .courses-content .card .text {
