@@ -36,7 +36,7 @@ main .about-content,
 section .interests-content,
 .skills-content,
 .projects-content,
-.timeline-content,
+.experiences-content,
 .courses-content,
 .contact-content {
   display: flex;
@@ -351,24 +351,19 @@ nav {
   background: hsl(210.1, 100%, 50%);
 }
 
-/* Timeline */
-.timeline {
+/* Experiences */
+.experiences {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.experiences .experiences-content {
   padding-left: 150px;
 }
 
-.timeline .timeline-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  position: relative;
-  left: 370px;
-}
-
-.timeline .dates ul {
+.experiences .dates ul {
   border-left: 4px solid hsl(233.4, 100%, 26.9%);
   border-radius: 0.8rem;
   background-color: #002e63;
@@ -381,41 +376,41 @@ nav {
   width: 70%;
 }
 
-.timeline h4 {
+.experiences h4 {
   font-size: 1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.timeline .dates .date {
+.experiences .dates .date {
   border-bottom: 1px solid hsl(210.1, 100%, 50%);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
 }
 
-.timeline .dates .date:last-of-type {
+.experiences .dates .date:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
 
-.timeline .dates .date::before,
-.timeline .dates .date::after {
+.experiences .dates .date::before,
+.experiences .dates .date::after {
   position: absolute;
   display: block;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.timeline .dates .date::before {
+.experiences .dates .date::before {
   content: attr(data-date);
   left: -21rem;
   text-align: right;
   font-size: 1rem;
 }
 
-.timeline .dates .date::after {
+.experiences .dates .date::after {
   content: "";
   box-shadow: 0 0 0 4px hsl(233.4, 100%, 26.9%);
   border-radius: 100%;
