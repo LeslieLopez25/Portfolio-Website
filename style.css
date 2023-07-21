@@ -593,58 +593,7 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 1300px) {
-  .home .max-width {
-    margin-left: 0px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    left: 350px;
-  }
-}
-
-@media (max-width: 1104px) {
-  .about .about-content .left img {
-    height: 350px;
-    width: 350px;
-  }
-
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 10px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    bottom: 30px;
-    left: 260px;
-  }
-
-  .timeline .timeline-content .dates {
-    position: relative;
-    left: 100px;
-  }
-}
-
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    bottom: 30px;
-    left: 240px;
-  }
-
-  .timeline .timeline-content .dates {
-    position: relative;
-    left: 100px;
-  }
-}
-
-@media (max-width: 947px) {
+@media (max-width: 800px) {
   .menu-btn {
     display: block;
     z-index: 999;
@@ -660,7 +609,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: hsl(0, 0%, 3.1%);
+    background: hsl(212.7, 100%, 6.5%);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -675,6 +624,7 @@ footer span a:hover {
   }
 
   .navbar .menu li a {
+    color: hsl(210.1, 100%, 50%);
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
@@ -749,19 +699,7 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 200px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    left: 140px;
-  }
-}
-
-@media (max-width: 690px) {
+@media (max-width: 650px) {
   .max-width {
     padding: 0 23px;
   }
@@ -816,134 +754,5 @@ footer span a:hover {
 
   .courses .courses-content .card {
     width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .home .home-content .text-2 {
-    font-size: 50px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 27px;
-  }
-
-  .about .about-content .right .text,
-  .skills .skills-content .left .text {
-    font-size: 19px;
-  }
-
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 100px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    left: 70px;
-    bottom: 40px;
-    font-size: 20px;
-    width: max-content;
-  }
-
-  .timeline .timeline-content .dates {
-    position: relative;
-    left: -50px;
-  }
-
-  .timeline .dates .date h2 {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .timeline .data-date {
-    font-size: 10px;
-  }
-
-  .timeline .dates ul {
-    margin: 0;
-    padding: 2rem;
-    left: 150px;
-    width: 235px;
-  }
-
-  .timeline .dates .date::after {
-    position: absolute;
-    left: -40px;
-  }
-
-  .timeline .dates .date::before {
-    left: -155px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-    width: 100px;
-  }
-
-  .timeline .dates .date {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    width: 200px;
-  }
-
-  .contact .right form .fields {
-    flex-direction: column;
-  }
-
-  .contact .right form .name,
-  .contact .right form .email {
-    margin: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 50px;
-  }
-
-  .timeline .timeline-content .left .text {
-    position: relative;
-    left: -10px;
-    bottom: 40px;
-    font-size: 20px;
-    width: max-content;
-  }
-
-  .timeline .timeline-content .dates {
-    left: -210px;
-  }
-
-  .timeline .dates .date h2 {
-    font-size: 20px;
-    width: max-content;
-  }
-
-  .timeline .data-date {
-    font-size: 10px;
-  }
-
-  .timeline .dates ul {
-    left: 295px;
-    width: 235px;
-  }
-
-  .timeline .dates .date::after {
-    position: absolute;
-    left: -40px;
-  }
-
-  .timeline .dates .date::before {
-    left: -155px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-    width: 100px;
-  }
-
-  .timeline .dates .date {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    width: 200px;
   }
 }
