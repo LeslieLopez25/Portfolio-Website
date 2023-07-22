@@ -682,13 +682,19 @@ footer span a:hover {
     margin-bottom: 20px;
   }
 
-  .timeline .timeline-content .left .text {
+  .experiences .experiences-content {
+    position: relative;
+    right: 190px;
+    width: 850px;
+  }
+
+  .experiences .experiences-content .left .text {
     position: relative;
     bottom: 40px;
     left: 220px;
   }
 
-  .timeline .timeline-content .dates {
+  .experiences .experiences-content .dates {
     position: relative;
     left: 130px;
   }
@@ -729,24 +735,24 @@ footer span a:hover {
     width: 100%;
   }
 
-  .timeline .timeline-content .dates {
+  .experiences .experiences-content .dates {
     position: relative;
     left: 0px;
     width: 50%;
   }
 
-  .timeline .timeline-content .left .text {
+  .experiences .experiences-content .left .text {
     position: relative;
     bottom: 40px;
     left: 130px;
   }
 
-  .timeline .dates ul {
+  .experiences .dates ul {
     width: 450px;
     left: 100px;
   }
 
-  .timeline .dates .date::before {
+  .experiences .dates .date::before {
     width: 50%;
     left: -230px;
     text-align: center;
