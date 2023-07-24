@@ -735,9 +735,14 @@ footer span a:hover {
     width: 100%;
   }
 
+  .experiences .experiences-content {
+    position: relative;
+    right: 110px;
+  }
+
   .experiences .experiences-content .dates {
     position: relative;
-    left: 0px;
+    left: 0;
     width: 50%;
   }
 
