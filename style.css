@@ -705,6 +705,11 @@ footer span a:hover {
   }
 }
 
+.contact .contact-content {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 650px) {
   .max-width {
     padding: 0 23px;
@@ -728,7 +733,7 @@ footer span a:hover {
 
   .skills .skills-content .tech-icons {
     position: relative;
-    left: 200px;
+    left: 170px;
   }
 
   .projects .projects-content .card {
@@ -737,7 +742,7 @@ footer span a:hover {
 
   .experiences .experiences-content {
     position: relative;
-    right: 110px;
+    right: 120px;
   }
 
   .experiences .experiences-content .dates {
@@ -749,7 +754,7 @@ footer span a:hover {
   .experiences .experiences-content .left .text {
     position: relative;
     bottom: 40px;
-    left: 130px;
+    right: 150px;
   }
 
   .experiences .dates ul {
