@@ -12,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* All similar content */
 header,
 main,
@@ -576,7 +581,7 @@ footer span a:hover {
 }
 
 /* Media queries */
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .skills .skills-content .tech-icons {
     position: relative;
     left: 60px;
@@ -593,7 +598,7 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .menu-btn {
     display: block;
     z-index: 999;
@@ -672,9 +677,9 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
-  .skills .skills-content .tech-icons {
-    position: relative;
-    left: 300px;
+  .skills .skills-content {
+    display: flex;
+    justify-content: center;
   }
 
   .projects .projects-content .card {
@@ -703,14 +708,14 @@ footer span a:hover {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
+  .contact .contact-content {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.contact .contact-content {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .max-width {
     padding: 0 23px;
   }
