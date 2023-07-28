@@ -737,8 +737,8 @@ footer span a:hover {
   }
 
   .skills .skills-content .tech-icons {
-    position: relative;
-    left: 170px;
+    display: inline-block;
+    justify-content: center;
   }
 
   .projects .projects-content .card {
