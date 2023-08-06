@@ -581,66 +581,20 @@ footer span a:hover {
 }
 
 /* Media queries */
-@media screen and (max-width: 650px) {
-  .max-width {
-    padding: 0 23px;
-  }
-
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 32px;
-  }
-
-  .home .home-content a {
-    font-size: 20px;
-  }
-
-  .interests .interests-content .card {
-    width: 100%;
-  }
-
+@media screen and (max-width: 1440px) {
   .skills .skills-content .tech-icons {
-    display: inline-block;
-    justify-content: center;
-  }
-
-  .projects .projects-content .card {
-    width: 100%;
-  }
-
-  .experiences .experiences-content {
     position: relative;
-    right: 120px;
+    left: 60px;
   }
 
-  .experiences .experiences-content .dates {
+  .timeline .timeline-content .left .text {
     position: relative;
-    left: 0;
-    width: 50%;
+    left: 410px;
   }
 
-  .experiences .experiences-content .left .text {
+  .timeline .timeline-content .dates {
     position: relative;
-    bottom: 40px;
-    right: 150px;
-  }
-
-  .experiences .dates ul {
-    width: 450px;
     left: 100px;
-  }
-
-  .experiences .dates .date::before {
-    width: 50%;
-    left: -230px;
-    text-align: center;
-  }
-
-  .courses .courses-content .card {
-    width: 100%;
   }
 }
 
@@ -761,19 +715,65 @@ footer span a:hover {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 650px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+
+  .home .home-content a {
+    font-size: 20px;
+  }
+
+  .interests .interests-content .card {
+    width: 100%;
+  }
+
   .skills .skills-content .tech-icons {
-    position: relative;
-    left: 60px;
+    display: inline-block;
+    justify-content: center;
   }
 
-  .timeline .timeline-content .left .text {
-    position: relative;
-    left: 410px;
+  .projects .projects-content .card {
+    width: 100%;
   }
 
-  .timeline .timeline-content .dates {
+  .experiences .experiences-content {
     position: relative;
+    right: 120px;
+  }
+
+  .experiences .experiences-content .dates {
+    position: relative;
+    left: 0;
+    width: 50%;
+  }
+
+  .experiences .experiences-content .left .text {
+    position: relative;
+    bottom: 40px;
+    right: 150px;
+  }
+
+  .experiences .dates ul {
+    width: 450px;
     left: 100px;
+  }
+
+  .experiences .dates .date::before {
+    width: 50%;
+    left: -230px;
+    text-align: center;
+  }
+
+  .courses .courses-content .card {
+    width: 100%;
   }
 }
