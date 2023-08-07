@@ -77,7 +77,7 @@ section h2 span {
   padding: 0 10px;
 }
 
-section .interests-content .card,
+.interests-content .card,
 .projects-content .card,
 .courses-content .card {
   width: calc(33% - 20px);
@@ -86,6 +86,13 @@ section .interests-content .card,
   border-radius: 6px;
   padding: 20px 25px;
   margin-bottom: 50px;
+}
+
+.interests-content .card:hover,
+.projects-content .card:hover,
+.courses-content .card:hover {
+  box-shadow: 0 0 12px 1px hsl(210.1, 100%, 50%);
+  transition: all 0.2s ease;
 }
 
 main .title,
