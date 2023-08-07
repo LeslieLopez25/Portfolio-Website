@@ -291,27 +291,21 @@ nav {
 /* Skills */
 .skills .skills-content .column {
   width: calc(30% - 30px);
+
 }
 
-.skills .skills-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.skills .skills-content .center .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
+.skills .skills-content .left .text,
+.skills .skills-content .center .text,
 .skills .skills-content .right .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.skills .skills-content .center {
+  position: relative;
+  bottom: 55px;
 }
 
 .skills .tech-icons {
