@@ -699,6 +699,10 @@ footer span a:hover {
     justify-content: center;
   }
 
+  .skills .skills-content .center {
+    padding-top: 100px;
+  }
+
   .projects .projects-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
