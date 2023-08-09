@@ -37,8 +37,8 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-main .about-content,
-section .interests-content,
+.about-content,
+.interests-content,
 .skills-content,
 .projects-content,
 .experiences-content,
