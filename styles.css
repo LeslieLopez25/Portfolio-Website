@@ -289,9 +289,20 @@ nav {
 }
 
 /* Skills */
-.skills .skills-content .column {
-  width: calc(30% - 30px);
+.skills .skills-content {
+  width: calc(33% - 20px);
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 300px;
+  position: relative;
+  left: 150px;
+  padding-top: 50px;
+}
 
+.skills .skills-content .column {
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills .skills-content .left .text,
@@ -304,6 +315,8 @@ nav {
 }
 
 .skills .skills-content .center {
+  margin-left: 50px;
+  padding: 0 10px 0 10px;
   position: relative;
   bottom: 55px;
 }
@@ -366,6 +379,7 @@ nav {
 }
 
 .experiences .experiences-content {
+  width: calc(33% - 20px);
   padding-left: 150px;
 }
 
