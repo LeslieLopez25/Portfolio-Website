@@ -295,14 +295,7 @@ nav {
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: 300px;
   position: relative;
-  left: 150px;
-  padding-top: 50px;
-}
-
-.skills .skills-content .column {
-  margin: 0 10px 0 10px;
-  display: flex;
-  flex-wrap: wrap;
+  left: 160px;
 }
 
 .skills .skills-content .left .text,
@@ -314,11 +307,23 @@ nav {
   text-align: center;
 }
 
+.skills .skills-content .left,
+.skills .skills-content .center,
+.skills .skills-content .right {
+  position: relative;
+}
+
+.skills .skills-content .left {
+  right: 50px;
+}
+
 .skills .skills-content .center {
   margin-left: 50px;
-  padding: 0 10px 0 10px;
-  position: relative;
   bottom: 55px;
+}
+
+.skills .skills-content .right {
+  left: 50px;
 }
 
 .skills .tech-icons {
@@ -622,7 +627,7 @@ footer span a:hover {
 @media screen and (max-width: 1440px) {
   .skills .skills-content .tech-icons {
     position: relative;
-    left: 60px;
+    left: 40px;
   }
 
   .experiences .experiences-content .left .text {
