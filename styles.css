@@ -389,7 +389,7 @@ nav {
 }
 
 .experiences .dates ul {
-  border-left: 4px solid hsl(233.4, 100%, 26.9%);
+  border-left: 4px solid white;
   border-radius: 0.8rem;
   background-color: #002e63;
   background-image: url("./assets/images/checkered-pattern.png");
@@ -444,7 +444,7 @@ nav {
 
 .experiences .dates .circle::after {
   content: "";
-  box-shadow: 0 0 0 4px hsl(233.4, 100%, 26.9%);
+  box-shadow: 0 0 0 4px white;
   border-radius: 100%;
   left: -5.5rem;
   height: 0.8rem;
