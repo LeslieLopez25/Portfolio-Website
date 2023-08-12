@@ -749,18 +749,11 @@ footer span a:hover {
   .experiences .experiences-content {
     position: relative;
     right: 190px;
-    width: 850px;
-  }
-
-  .experiences .experiences-content .left .text {
-    position: relative;
-    bottom: 40px;
-    left: 220px;
   }
 
   .experiences .experiences-content .dates {
     position: relative;
-    left: 130px;
+    left: 200px;
   }
 
   .courses .courses-content .card {
