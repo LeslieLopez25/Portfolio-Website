@@ -728,7 +728,7 @@ footer span a:hover {
   }
 
   .skills .skills-content .left {
-    padding-left: 50px;
+    position: initial;
   }
 
   .skills .skills-content .center {
@@ -788,9 +788,9 @@ footer span a:hover {
     width: 100%;
   }
 
-  .skills .skills-content .tech-icons {
-    display: inline-block;
-    justify-content: center;
+  .skills .skills-content {
+    position: relative;
+    left: 130px;
   }
 
   .projects .projects-content .card {
