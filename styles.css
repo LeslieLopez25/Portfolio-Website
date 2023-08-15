@@ -830,3 +830,15 @@ footer span a:hover {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .skills .skills-content {
+    position: relative;
+    left: 125px;
+  }
+
+  .experiences .experiences-content {
+    position: relative;
+    right: 160px;
+  }
+}
