@@ -629,10 +629,6 @@ footer span a:hover {
     left: 20px;
   }
 
-  .projects .projects-content .card {
-    width: 100vw;
-  }
-
   .experiences .experiences-content .left .text {
     position: relative;
     left: 410px;
