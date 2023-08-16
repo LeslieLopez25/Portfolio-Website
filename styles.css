@@ -868,3 +868,31 @@ footer span a:hover {
     word-break: break-word;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .skills .skills-content .left {
+    position: relative;
+    right: 150px;
+  }
+
+  .skills .skills-content .center {
+    position: relative;
+    left: 230px;
+  }
+
+  .skills .skills-content .right {
+    position: relative;
+    left: -145px;
+  }
+
+  .skills .skills-content .left .text,
+  .skills .skills-content .center .text {
+    position: relative;
+    left: -25px;
+  }
+
+  .skills .skills-content .right .text {
+    position: relative;
+    left: -25px;
+  }
+}
