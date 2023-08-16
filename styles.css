@@ -845,13 +845,26 @@ footer span a:hover {
 }
 
 @media screen and (max-width: 400px) {
+  .max-width {
+    padding: 0 15px;
+  }
+
   .skills .skills-content {
     position: relative;
-    left: 125px;
+    left: 250px;
+  }
+
+  .skills .skills-content .right .text {
+    position: relative;
+    left: 20px;
   }
 
   .experiences .experiences-content {
     position: relative;
     right: 160px;
+  }
+
+  .contact .contact-content .info .sub-title {
+    word-break: break-word;
   }
 }
