@@ -290,12 +290,14 @@ nav {
 
 /* Skills */
 .skills .skills-content {
-  width: calc(33% - 20px);
-  display: grid;
+  width: 50vw;
+  display: flex;
+  flex-wrap: nowrap;
+  /* display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 300px;
+  grid-template-rows: 300px; */
   position: relative;
-  left: 180px;
+  left: 300px;
 }
 
 .skills .skills-content .left .text,
@@ -307,6 +309,12 @@ nav {
   text-align: center;
 }
 
+.skills .skills-content .center .text,
+.skills .skills-content .right .text {
+  position: relative;
+  right: 45px;
+}
+
 .skills .skills-content .left,
 .skills .skills-content .center,
 .skills .skills-content .right {
@@ -314,16 +322,17 @@ nav {
 }
 
 .skills .skills-content .left {
-  right: 50px;
+  right: 255px;
 }
 
 .skills .skills-content .center {
-  margin-left: 50px;
-  bottom: 55px;
+  margin-left: -379px;
+  bottom: 56px;
+  left: 252px;
 }
 
 .skills .skills-content .right {
-  left: 50px;
+  left: 248px;
 }
 
 .skills .tech-icons {
