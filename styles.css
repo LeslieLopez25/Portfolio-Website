@@ -803,7 +803,13 @@ footer span a:hover {
 
   .skills .skills-content {
     position: relative;
-    left: 200px;
+    left: 323px;
+  }
+
+  .skills .skills-content .center .text,
+  .skills .skills-content .right .text {
+    position: relative;
+    left: 0;
   }
 
   .experiences .experiences-content {
