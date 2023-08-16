@@ -293,9 +293,6 @@ nav {
   width: 50vw;
   display: flex;
   flex-wrap: nowrap;
-  /* display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 300px; */
   position: relative;
   left: 300px;
 }
@@ -736,20 +733,21 @@ footer span a:hover {
     display: block;
   }
 
-  .skills .skills-content .center {
-    padding-top: 100px;
+  .skills .skills-content .left {
     position: relative;
-    right: 50px;
+    right: 177px;
   }
 
   .skills .skills-content .center {
     position: relative;
-    right: 100px;
+    left: 202px;
+    margin-top: 115px;
   }
 
   .skills .skills-content .right {
     position: relative;
-    left: -50px;
+    left: -173px;
+    margin-top: -28px;
   }
 
   .projects .projects-content .card {
