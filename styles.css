@@ -852,12 +852,12 @@ footer span a:hover {
 
   .skills .skills-content {
     position: relative;
-    left: 250px;
+    left: 233px;
   }
 
   .skills .skills-content .right .text {
     position: relative;
-    left: 20px;
+    left: 5px;
   }
 
   .experiences .experiences-content {
@@ -871,19 +871,9 @@ footer span a:hover {
 }
 
 @media screen and (max-width: 368px) {
-  .skills .skills-content .left {
+  .skills .skills-content {
     position: relative;
-    right: 150px;
-  }
-
-  .skills .skills-content .center {
-    position: relative;
-    left: 230px;
-  }
-
-  .skills .skills-content .right {
-    position: relative;
-    left: -145px;
+    left: 270px;
   }
 
   .skills .skills-content .left .text,
