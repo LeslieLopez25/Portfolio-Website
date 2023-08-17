@@ -732,19 +732,29 @@ footer span a:hover {
 
   .skills .skills-content .left {
     position: relative;
-    right: 177px;
+    right: 160px;
   }
 
   .skills .skills-content .center {
     position: relative;
-    left: 202px;
-    margin-top: 115px;
+    left: 225px;
+    margin-top: 70px;
+  }
+
+  .skills .skills-content .center .text {
+    position: relative;
+    left: 0;
   }
 
   .skills .skills-content .right {
     position: relative;
-    left: -173px;
-    margin-top: -28px;
+    left: -151px;
+    margin-top: 70px;
+  }
+
+  .skills .skills-content .right .text {
+    position: relative;
+    left: 0;
   }
 
   .projects .projects-content .card {
