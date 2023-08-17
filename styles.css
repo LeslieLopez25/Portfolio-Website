@@ -39,7 +39,6 @@ footer {
 
 .about-content,
 .interests-content,
-.skills-content,
 .projects-content,
 .experiences-content,
 .courses-content,
@@ -292,9 +291,8 @@ nav {
 .skills .skills-content {
   width: 50vw;
   display: flex;
-  flex-wrap: nowrap;
   position: relative;
-  left: 300px;
+  left: 290px;
 }
 
 .skills .skills-content .left .text,
@@ -302,14 +300,14 @@ nav {
 .skills .skills-content .right .text {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 10px 0 7px 0;
   text-align: center;
 }
 
 .skills .skills-content .center .text,
 .skills .skills-content .right .text {
   position: relative;
-  right: 45px;
+  right: 50px;
 }
 
 .skills .skills-content .left,
@@ -324,7 +322,6 @@ nav {
 
 .skills .skills-content .center {
   margin-left: -379px;
-  bottom: 56px;
   left: 252px;
 }
 
