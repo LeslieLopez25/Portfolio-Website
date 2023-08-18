@@ -1,4 +1,4 @@
-// Sticky navbar
+// STICKY NAVBAR
 window.onscroll = function () {
   scrollFunction();
 };
@@ -13,7 +13,7 @@ function scrollFunction() {
   }
 }
 
-// Mobile menu
+// MOBILE MENU
 const menu = document.querySelector(".mobile-menu");
 const menuLinks = document.querySelector(".menu");
 
@@ -22,7 +22,7 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 
-// Liquid animation effect
+// LIQUID ANIMATION EFFECT
 new hoverEffect({
   parent: document.querySelector(".bg-img"),
   intensity: 0.3,

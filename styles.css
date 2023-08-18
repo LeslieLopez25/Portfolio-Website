@@ -1,4 +1,4 @@
-/* Google fonts */
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
@@ -12,22 +12,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ALL SIMILAR CONTENT */
 html,
 body {
   overflow-x: hidden;
 }
 
-/* All similar content */
 header,
 main,
 section {
   padding: 100px 0;
-}
-
-.max-width {
-  max-width: 1440px;
-  padding: 0 80px;
-  margin: auto;
 }
 
 header,
@@ -37,16 +31,10 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-.about-content,
-.interests-content,
-.projects-content,
-.experiences-content,
-.courses-content,
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+.max-width {
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: auto;
 }
 
 main .title::before,
@@ -76,6 +64,29 @@ section h2 span {
   padding: 0 10px;
 }
 
+main .title,
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.about-content,
+.interests-content,
+.projects-content,
+.experiences-content,
+.courses-content,
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .interests-content .card,
 .projects-content .card,
 .courses-content .card {
@@ -92,17 +103,6 @@ section h2 span {
 .courses-content .card:hover {
   box-shadow: 0 0 12px 1px hsl(210.1, 100%, 50%);
   transition: all 0.2s ease;
-}
-
-main .title,
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .interests .interests-content .card .box,
@@ -124,7 +124,7 @@ section .title {
   height: auto;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
   background: hsl(209.5, 100%, 22%, 0.5);
 }
@@ -181,7 +181,7 @@ nav {
   color: hsl(0, 0%, 100%);
 }
 
-/* Menu btn */
+/* MENU BTN */
 .menu-btn {
   color: hsl(0, 0%, 100%);
   font-size: 23px;
@@ -189,7 +189,7 @@ nav {
   display: none;
 }
 
-/* Home */
+/* HOME */
 .home {
   display: flex;
   height: 100vh;
@@ -232,7 +232,7 @@ nav {
   margin: 5px 0;
 }
 
-/* About */
+/* ABOUT */
 .about .about-content .left {
   width: 45%;
 }
@@ -275,7 +275,7 @@ nav {
   background: none;
 }
 
-/* Interests */
+/* INTERESTS */
 .interests .interests-content .card .interests-imgs {
   width: 130px;
   height: 130px;
@@ -287,7 +287,7 @@ nav {
   margin: 10px 0 7px 0;
 }
 
-/* Skills */
+/* SKILLS */
 .skills .skills-content {
   width: 50vw;
   display: flex;
@@ -345,7 +345,7 @@ nav {
   box-shadow: 0 0 8px 3px hsl(210.1, 100%, 50%);
 }
 
-/* Projects */
+/* PROJECTS */
 .projects .projects-content .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -382,7 +382,7 @@ nav {
   background: hsl(210.1, 100%, 50%);
 }
 
-/* Experiences */
+/* EXPERIENCES */
 .experiences {
   width: 100%;
   height: 100%;
@@ -458,7 +458,7 @@ nav {
   background-color: hsl(210.1, 100%, 50%);
 }
 
-/* Courses */
+/* COURSES */
 .courses .courses-content .card {
   cursor: pointer;
 }
@@ -469,7 +469,7 @@ nav {
   margin: 10px 0 7px 0;
 }
 
-/* Contact */
+/* CONTACT */
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -596,7 +596,7 @@ a:hover {
   color: hsl(212.7, 100%, 6.5%);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: hsl(210.1, 100%, 50%);
   padding: 15px 23px;
@@ -629,7 +629,7 @@ footer span a:hover {
   background-color: hsl(210.1, 100%, 50%);
 }
 
-/* Media queries */
+/* MEDIA QUERIES */
 @media screen and (max-width: 1440px) {
   .skills .skills-content .tech-icons {
     position: relative;
