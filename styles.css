@@ -337,8 +337,12 @@ nav {
   height: 80px;
   margin-top: 25px;
   margin-right: 10px;
-  box-shadow: 0 0 5px 1px hsl(210.1, 100%, 50%);
+  border-radius: 4px;
   transition: all 0.3s ease;
+}
+
+.skills .tech-icons:hover {
+  box-shadow: 0 0 8px 3px hsl(210.1, 100%, 50%);
 }
 
 /* Projects */
