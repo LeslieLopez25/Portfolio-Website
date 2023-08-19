@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -32,47 +32,47 @@ footer {
 }
 
 .max-width {
-  max-width: 1440px;
-  padding: 0 80px;
   margin: auto;
+  padding: 0 80px;
+  max-width: 1440px;
 }
 
 main .title::before,
 section .title::before {
   content: "";
-  height: 5px;
   background: hsl(210.1, 100%, 50%);
   width: 300px;
-  left: 50%;
-  top: 35%;
+  height: 5px;
   position: absolute;
+  top: 35%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
 main,
 section {
-  color: hsl(0, 0%, 100%);
   background: hsl(212.7, 100%, 6.5%);
   background-image: url("./assets/images/checkered-pattern.png");
+  color: hsl(0, 0%, 100%);
 }
 
 main h2 span,
 section h2 span {
   background: hsl(212.7, 100%, 6.5%);
+  padding: 0 10px;
   position: relative;
   z-index: 5;
-  padding: 0 10px;
 }
 
 main .title,
 section .title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
+  position: relative;
   font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .about-content,
@@ -90,12 +90,12 @@ section .title {
 .interests-content .card,
 .projects-content .card,
 .courses-content .card {
+  background: hsl(212.1, 100%, 19.4%);
+  margin-bottom: 50px;
+  padding: 20px 25px;
   width: calc(33% - 20px);
-  background: #002e63;
   text-align: center;
   border-radius: 6px;
-  padding: 20px 25px;
-  margin-bottom: 50px;
 }
 
 .interests-content .card:hover,
@@ -130,13 +130,13 @@ nav {
 }
 
 .navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-  padding: 20px 0;
   font-family: "Ubuntu", sans-serif;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .navbar #sticky {
@@ -156,12 +156,12 @@ nav {
 }
 
 .navbar .logo span {
-  color: #002e63;
+  color: hsl(212.1, 100%, 19.4%);
 }
 
 .navbar .menu li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 
 .navbar .menu li a {
@@ -174,7 +174,7 @@ nav {
 }
 
 .navbar .menu li a:hover {
-  color: #002e63;
+  color: hsl(212.1, 100%, 19.4%);
 }
 
 .navbar #sticky .menu li a:hover {
@@ -183,20 +183,20 @@ nav {
 
 /* MENU BTN */
 .menu-btn {
+  display: none;
   color: hsl(0, 0%, 100%);
   font-size: 23px;
   cursor: pointer;
-  display: none;
 }
 
 /* HOME */
 .home {
   display: flex;
-  height: 100vh;
   color: hsl(0, 0%, 100%);
-  -webkit-text-stroke: 1px hsl(209.5, 100%, 22%);
   min-height: 500px;
+  height: 100vh;
   font-family: "Ubuntu", sans-serif;
+  -webkit-text-stroke: 1px hsl(209.5, 100%, 22%);
 }
 
 .home .bg-img {
@@ -204,8 +204,8 @@ nav {
   min-height: 500px;
   height: 100vh;
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -219,17 +219,17 @@ nav {
 }
 
 .home .home-content .text-2 {
+  margin-left: -3px;
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
 }
 
 .home .home-content .text-3 {
   color: hsl(209.5, 100%, 22%);
-  -webkit-text-stroke: 1px hsl(195.1, 100%, 50%);
-  font-weight: 500;
   font-size: 40px;
+  font-weight: 500;
   margin: 5px 0;
+  -webkit-text-stroke: 1px hsl(195.1, 100%, 50%);
 }
 
 /* ABOUT */
@@ -238,8 +238,8 @@ nav {
 }
 
 .about .about-content .left img {
-  height: 400px;
   width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -249,9 +249,9 @@ nav {
 }
 
 .about .about-content .right .text {
+  margin-bottom: 10px;
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 .about .about-content .right p {
@@ -264,15 +264,15 @@ nav {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 30px;
   margin-top: 20px;
-  border-radius: 6px;
+  padding: 10px 30px;
   border: 2px solid hsl(210.1, 100%, 50%);
+  border-radius: 6px;
 }
 
 .about .about-content .right a:hover {
-  color: hsl(210.1, 100%, 50%);
   background: none;
+  color: hsl(210.1, 100%, 50%);
 }
 
 /* INTERESTS */
@@ -289,8 +289,8 @@ nav {
 
 /* SKILLS */
 .skills .skills-content {
-  width: 50vw;
   display: flex;
+  width: 50vw;
   position: relative;
   left: 290px;
 }
@@ -330,13 +330,12 @@ nav {
 }
 
 .skills .tech-icons {
-  background-color: #002e63;
-  position: relative;
-  left: 40px;
+  background-color: hsl(212.1, 100%, 19.4%);
+  margin: 25px 10px 0 0;
   width: 80px;
   height: 80px;
-  margin-top: 25px;
-  margin-right: 10px;
+  position: relative;
+  left: 40px;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -356,26 +355,22 @@ nav {
   padding-bottom: 25px;
 }
 
-.projects .btn-code {
-  border-radius: 4px;
-  color: #fff;
+.projects .btn-code,
+.projects .btn-demo {
+  color: hsl(0, 0%, 100%);
   font-size: 16px;
-  background: hsl(210.1, 100%, 50%);
-  border: hsl(210.1, 100%, 50%) solid 2px;
   padding: 10px 15px 10px 15px;
+  border: hsl(210.1, 100%, 50%) solid 2px;
+  border-radius: 4px;
+}
+
+.projects .btn-code {
+  background: hsl(210.1, 100%, 50%);
 }
 
 .projects .btn-code:hover {
   background: none;
   border: hsl(210.1, 100%, 50%) solid 2px;
-}
-
-.projects .btn-demo {
-  border-radius: 4px;
-  color: #fff;
-  font-size: 16px;
-  border: hsl(210.1, 100%, 50%) solid 2px;
-  padding: 10px 15px 10px 15px;
 }
 
 .projects .btn-demo:hover {
@@ -384,34 +379,34 @@ nav {
 
 /* EXPERIENCES */
 .experiences {
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
 }
 
 .experiences .experiences-content {
-  width: calc(33% - 20px);
   padding-left: 150px;
+  width: calc(33% - 20px);
 }
 
 .experiences .dates ul {
-  border-left: 4px solid white;
-  border-radius: 0.8rem;
-  background-color: #002e63;
+  background-color: hsl(212.1, 100%, 19.4%);
   background-image: url("./assets/images/checkered-pattern.png");
   margin: 0 auto;
+  padding: 5rem;
+  width: 70vw;
   position: relative;
   right: 100px;
-  padding: 5rem;
-  list-style: none;
   text-align: left;
-  width: 70vw;
+  border-left: 4px solid hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  list-style: none;
 }
 
 .experiences h4 {
   font-size: 1.2rem;
-  text-transform: uppercase;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .experiences h3 {
@@ -422,40 +417,40 @@ nav {
 }
 
 .experiences .dates .circle {
-  border-bottom: 1px solid hsl(210.1, 100%, 50%);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
+  border-bottom: 1px solid hsl(210.1, 100%, 50%);
 }
 
 .experiences .dates .circle:last-of-type {
-  padding-bottom: 0;
   margin-bottom: 0;
+  padding-bottom: 0;
   border: none;
 }
 
 .experiences .dates .circle::before,
 .experiences .dates .circle::after {
-  position: absolute;
   display: block;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .experiences .dates .circle::before {
+  font-size: 1rem;
   left: -21rem;
   text-align: right;
-  font-size: 1rem;
 }
 
 .experiences .dates .circle::after {
   content: "";
-  box-shadow: 0 0 0 4px white;
-  border-radius: 100%;
-  left: -5.5rem;
-  height: 0.8rem;
-  width: 0.8rem;
   background-color: hsl(210.1, 100%, 50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  left: -5.5rem;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+  border-radius: 100%;
 }
 
 /* COURSES */
