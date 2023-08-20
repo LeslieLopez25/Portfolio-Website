@@ -290,9 +290,9 @@ nav {
 /* SKILLS */
 .skills .skills-content {
   display: flex;
-  width: 50vw;
+  width: calc(60% - 20px);
   position: relative;
-  left: 290px;
+  left: 280px;
 }
 
 .skills .skills-content .left .text,
@@ -317,7 +317,7 @@ nav {
 }
 
 .skills .skills-content .left {
-  right: 255px;
+  right: 265px;
 }
 
 .skills .skills-content .center {
@@ -326,7 +326,7 @@ nav {
 }
 
 .skills .skills-content .right {
-  left: 248px;
+  left: 280px;
 }
 
 .skills .tech-icons {
