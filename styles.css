@@ -638,6 +638,10 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .max-width {
+    max-width: 930px;
+  }
+
   .menu-btn {
     display: block;
     z-index: 999;
@@ -689,10 +693,6 @@ footer {
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
-  }
-
-  .max-width {
-    max-width: 930px;
   }
 
   .about .about-content .column {
@@ -798,32 +798,32 @@ footer {
     font-size: 20px;
   }
 
-  .interests .interests-content .card {
-    width: 100%;
-  }
-
+  .interests .interests-content .card,
   .projects .projects-content .card {
     width: 100%;
   }
 
-  .skills .skills-content {
+  .skills .skills-content,
+  .experiences .experiences-content,
+  .experiences .experiences-content .dates,
+  .experiences .experiences-content .left .text {
     position: relative;
+  }
+
+  .skills .skills-content {
     left: 305px;
   }
 
   .experiences .experiences-content {
-    position: relative;
     right: 120px;
   }
 
   .experiences .experiences-content .dates {
-    position: relative;
-    left: 0;
     width: 50%;
+    left: 0;
   }
 
   .experiences .experiences-content .left .text {
-    position: relative;
     bottom: 40px;
     right: 150px;
   }
@@ -848,18 +848,21 @@ footer {
     padding: 0 15px;
   }
 
-  .skills .skills-content {
+  .skills .skills-content,
+  .skills .skills-content .right .text,
+  .experiences .experiences-content {
     position: relative;
+  }
+
+  .skills .skills-content {
     left: 233px;
   }
 
   .skills .skills-content .right .text {
-    position: relative;
     left: 5px;
   }
 
   .experiences .experiences-content {
-    position: relative;
     right: 160px;
   }
 
@@ -869,19 +872,24 @@ footer {
 }
 
 @media screen and (max-width: 368px) {
-  .skills .skills-content {
+
+  .skills .skills-content,
+  .skills .skills-content .left .text,
+  .skills .skills-content .center .text,
+  .skills .skills-content .right .text {
     position: relative;
+  }
+
+  .skills .skills-content {
     left: 270px;
   }
 
   .skills .skills-content .left .text,
   .skills .skills-content .center .text {
-    position: relative;
     left: -25px;
   }
 
   .skills .skills-content .right .text {
-    position: relative;
     left: -25px;
   }
 }
