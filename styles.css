@@ -601,13 +601,13 @@ footer {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
+  background-color: hsl(212.7, 100%, 6.5%);
   width: .6rem;
   border-radius: .5rem;
-  background-color: hsl(212.7, 100%, 6.5%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #002e63;
+  background-color: hsl(212.1, 100%, 19.4%);
   border-radius: .5rem;
 }
 
@@ -617,18 +617,22 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1440px) {
-  .skills .skills-content .tech-icons {
+
+  .skills .skills-content .tech-icons,
+  .experiences .experiences-content .left .text,
+  .experiences .experiences-content .dates {
     position: relative;
+  }
+
+  .skills .skills-content .tech-icons {
     left: 20px;
   }
 
   .experiences .experiences-content .left .text {
-    position: relative;
     left: 410px;
   }
 
   .experiences .experiences-content .dates {
-    position: relative;
     left: 100px;
   }
 }
@@ -644,14 +648,14 @@ footer {
   }
 
   .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
     background: hsl(212.7, 100%, 6.5%);
-    text-align: center;
     padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    text-align: center;
     transition: all 0.3s ease;
   }
 
@@ -664,10 +668,10 @@ footer {
   }
 
   .navbar .menu li a {
-    color: white;
     display: inline-block;
-    margin: 20px 0;
+    color: hsl(0, 0%, 100%);
     font-size: 25px;
+    margin: 20px 0;
   }
 
   .navbar .menu li a:hover {
@@ -706,65 +710,69 @@ footer {
   }
 
   .interests .interests-content .card {
-    width: calc(50% - 10px);
     margin-bottom: 20px;
+    width: calc(50% - 10px);
   }
 
   .skills .skills-content .column,
   .contact .contact-content .column {
-    width: 50vw;
     margin-bottom: 35px;
+    width: 50vw;
   }
 
   .skills .skills-content {
     display: block;
   }
 
-  .skills .skills-content .left {
+  .skills .skills-content .left,
+  .skills .skills-content .center,
+  .skills .skills-content .right {
     position: relative;
+  }
+
+  .skills .skills-content .left {
     right: 160px;
   }
 
   .skills .skills-content .center {
-    position: relative;
-    left: 225px;
     margin-top: 70px;
+    left: 225px;
   }
 
   .skills .skills-content .center .text {
-    position: relative;
     left: 0;
   }
 
   .skills .skills-content .right {
-    position: relative;
-    left: -151px;
     margin-top: 70px;
+    left: -151px;
   }
 
   .skills .skills-content .right .text {
-    position: relative;
     left: 0;
   }
 
   .projects .projects-content .card {
-    width: 100vw;
     margin-bottom: 20px;
+    width: 100vw;
+  }
+
+  .experiences .experiences-content,
+  .experiences .experiences-content .dates {
+    position: relative;
   }
 
   .experiences .experiences-content {
-    position: relative;
     right: 150px;
   }
 
   .experiences .experiences-content .dates {
-    position: relative;
     left: 160px;
   }
 
   .courses .courses-content .card {
-    width: calc(50% - 10px);
     margin-bottom: 20px;
+    width: calc(50% - 10px);
   }
 
   .contact .contact-content {
