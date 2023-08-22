@@ -131,7 +131,7 @@ nav {
 
 .navbar {
   font-family: "Ubuntu", sans-serif;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   width: 100%;
   position: fixed;
   top: 0;
@@ -140,7 +140,7 @@ nav {
 }
 
 .navbar #sticky {
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 
 .navbar .max-width {
@@ -151,7 +151,7 @@ nav {
 
 .navbar .logo {
   color: hsl(0, 0%, 100%);
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 600;
 }
 
@@ -167,9 +167,9 @@ nav {
 .navbar .menu li a {
   display: block;
   color: hsl(0, 0%, 100%);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 1.5625rem;
   transition: color 0.3s ease;
 }
 
@@ -185,7 +185,7 @@ nav {
 .menu-btn {
   display: none;
   color: hsl(0, 0%, 100%);
-  font-size: 23px;
+  font-size: 1.4375rem;
   cursor: pointer;
 }
 
