@@ -27,6 +27,6 @@ new hoverEffect({
   parent: document.querySelector(".bg-img"),
   intensity: 0.3,
   image1: "./assets/images/img-1.jpg",
-  image2: "./assets/images/img-2.JPG",
+  image2: "./assets/images/img-2.jpg",
   displacementImage: "./assets/images/leaf.jpg",
 });
