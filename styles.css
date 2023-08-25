@@ -192,10 +192,11 @@ nav {
 /* HOME */
 .home {
   display: flex;
-  color: hsl(0, 0%, 100%);
+  color: hsl(210.1, 100%, 50%);
   min-height: 31.25rem;
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
+  -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
 }
 
 .home .bg-img {
@@ -224,7 +225,7 @@ nav {
 }
 
 .home .home-content .text-3 {
-  color: hsl(209.5, 100%, 22%);
+  color: hsl(0, 0%, 100%);
   font-size: 2.5rem;
   font-weight: 500;
   margin: 0.3125rem 0;
@@ -344,20 +345,20 @@ nav {
 
 /* PROJECTS */
 .projects .projects-content .card .text {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+  margin: 0.625rem 0 0.4375rem 0;
 }
 
 .projects .projects-content .card p {
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 
 .projects .btn-code,
 .projects .btn-demo {
   color: hsl(0, 0%, 100%);
-  font-size: 16px;
-  padding: 10px 15px 10px 15px;
+  font-size: 1rem;
+  padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
   border: hsl(210.1, 100%, 50%) solid 2px;
   border-radius: 4px;
 }
@@ -383,8 +384,8 @@ nav {
 }
 
 .experiences .experiences-content {
-  padding-left: 150px;
-  width: calc(33% - 20px);
+  padding-left: 9.375rem;
+  width: calc(33% - 1.25rem);
 }
 
 .experiences .dates ul {
@@ -394,7 +395,7 @@ nav {
   padding: 5rem;
   width: 70vw;
   position: relative;
-  right: 100px;
+  right: 6.25rem;
   text-align: left;
   border-left: 4px solid hsl(0, 0%, 100%);
   border-radius: 0.8rem;
@@ -457,53 +458,53 @@ nav {
 }
 
 .courses .courses-content .card .text {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+  margin: 0.625rem 0 0.4375rem 0;
 }
 
 /* CONTACT */
 .contact .contact-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 1.875rem);
 }
 
 .contact .contact-content .text {
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .contact .contact-content .left .icons {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 .contact .contact-content .row {
   display: flex;
   align-items: center;
   background-color: hsl(212.1, 100%, 19.4%);
-  margin-top: 15px;
-  padding-left: 15px;
-  height: 65px;
+  margin-top: 0.9375rem;
+  padding-left: 0.9375rem;
+  height: 4.0625rem;
   border-radius: 4px;
 }
 
 .contact .contact-content .row .info {
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .contact .contact-content .row i {
   color: hsl(210.1, 100%, 50%);
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .contact .contact-content .info .head {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
 }
 
 .contact .contact-content .info .sub-title {
   color: hsl(0, 0%, 100%);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .contact .right form .fields {
@@ -512,29 +513,29 @@ nav {
 
 .contact .right form .field,
 .contact .right form .fields .field {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   width: 100%;
-  height: 45px;
+  height: 2.8125rem;
 }
 
 .contact .right form .textarea {
   width: 100%;
-  height: 80px;
+  height: 5rem;
 }
 
 .contact .right form .name {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .contact .right form .email {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .contact .right form .field input,
 .contact .right form .textarea textarea {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-family: "Poppins", sans-serif;
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   width: 100%;
   height: 100%;
   border: 1px solid hsl(0, 0%, 75.3%);
@@ -549,19 +550,19 @@ nav {
 }
 
 .contact .right form .textarea textarea {
-  padding-top: 10px;
+  padding-top: 0.625rem;
   resize: none;
 }
 
 .contact .right form .button {
-  width: 170px;
-  height: 47px;
+  width: 10.625rem;
+  height: 2.9375rem;
 }
 
 .contact .right form .button button {
   background: hsl(210.1, 100%, 50%);
   color: hsl(0, 0%, 100%);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   width: 100%;
   height: 100%;
@@ -593,7 +594,7 @@ a:hover {
 footer {
   background: hsl(210.1, 100%, 50%);
   color: hsl(0, 0%, 100%);
-  padding: 15px 23px;
+  padding: 0.9375rem 1.4375rem;
   text-align: center;
 }
 
