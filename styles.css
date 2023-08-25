@@ -615,7 +615,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 90em) {
 
   .skills .skills-content .tech-icons,
   .experiences .experiences-content .left .text,
@@ -624,15 +624,15 @@ footer {
   }
 
   .skills .skills-content .tech-icons {
-    left: 20px;
+    left: 1.25rem;
   }
 
   .experiences .experiences-content .left .text {
-    left: 410px;
+    left: 25.625rem;
   }
 
   .experiences .experiences-content .dates {
-    left: 100px;
+    left: 6.25rem;
   }
 }
 
