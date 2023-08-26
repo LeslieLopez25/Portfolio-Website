@@ -288,55 +288,29 @@ nav {
 
 /* SKILLS */
 .skills .skills-content {
-  display: flex;
-  width: calc(60% - 1.25rem);
-  position: relative;
-  left: 17.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 0 auto;
+  /* max-width: calc(90% - 1.25rem); */
+  max-width: 90%;
 }
 
-.skills .skills-content .left .text,
-.skills .skills-content .center .text,
-.skills .skills-content .right .text {
+.skills .skills-content .text {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0.625rem 0 0.4375rem 0;
   text-align: center;
 }
 
-.skills .skills-content .center .text,
-.skills .skills-content .right .text {
-  position: relative;
-  right: 3.125rem;
-}
-
-.skills .skills-content .left,
-.skills .skills-content .center,
-.skills .skills-content .right {
-  position: relative;
-}
-
-.skills .skills-content .left {
-  right: 16.5625rem;
-}
-
-.skills .skills-content .center {
-  margin-left: -23.6875rem;
-  left: 15.75rem;
-}
-
-.skills .skills-content .right {
-  left: 17.5rem;
-}
-
 .skills .tech-icons {
   background-color: hsl(212.1, 100%, 19.4%);
-  margin: 1.5625rem 0.625rem 0 0;
   width: 5rem;
   height: 5rem;
-  position: relative;
-  left: 2.5rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  justify-self: center;
+  align-self: center;
 }
 
 .skills .tech-icons:hover {
