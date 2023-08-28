@@ -292,8 +292,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 0 auto;
-  /* max-width: calc(90% - 1.25rem); */
-  max-width: 90%;
+  max-width: calc(90% - 1.25rem);
 }
 
 .skills .skills-content .text {
@@ -305,12 +304,12 @@ nav {
 
 .skills .tech-icons {
   background-color: hsl(212.1, 100%, 19.4%);
+  justify-self: center;
+  align-self: center;
   width: 5rem;
   height: 5rem;
   border-radius: 4px;
   transition: all 0.3s ease;
-  justify-self: center;
-  align-self: center;
 }
 
 .skills .tech-icons:hover {
@@ -591,14 +590,9 @@ footer {
 /* MEDIA QUERIES */
 @media screen and (max-width: 90em) {
 
-  .skills .skills-content .tech-icons,
   .experiences .experiences-content .left .text,
   .experiences .experiences-content .dates {
     position: relative;
-  }
-
-  .skills .skills-content .tech-icons {
-    left: 1.25rem;
   }
 
   .experiences .experiences-content .left .text {
@@ -687,44 +681,6 @@ footer {
     width: calc(50% - 10px);
   }
 
-  .skills .skills-content .column,
-  .contact .contact-content .column {
-    margin-bottom: 35px;
-    width: 50vw;
-  }
-
-  .skills .skills-content {
-    display: block;
-  }
-
-  .skills .skills-content .left,
-  .skills .skills-content .center,
-  .skills .skills-content .right {
-    position: relative;
-  }
-
-  .skills .skills-content .left {
-    right: 160px;
-  }
-
-  .skills .skills-content .center {
-    margin-top: 70px;
-    left: 225px;
-  }
-
-  .skills .skills-content .center .text {
-    left: 0;
-  }
-
-  .skills .skills-content .right {
-    margin-top: 70px;
-    left: -151px;
-  }
-
-  .skills .skills-content .right .text {
-    left: 0;
-  }
-
   .projects .projects-content .card {
     margin-bottom: 20px;
     width: 100vw;
@@ -776,7 +732,6 @@ footer {
     width: 100%;
   }
 
-  .skills .skills-content,
   .experiences .experiences-content,
   .experiences .experiences-content .dates,
   .experiences .experiences-content .left .text {
@@ -784,7 +739,19 @@ footer {
   }
 
   .skills .skills-content {
-    left: 305px;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .skills .skills-content .text {
+    text-align: center;
+  }
+
+  .skills .tech-icons {
+    justify-self: center;
+    align-self: center;
+    margin: 0.625rem 0;
   }
 
   .experiences .experiences-content {
@@ -821,20 +788,6 @@ footer {
     padding: 0 15px;
   }
 
-  .skills .skills-content,
-  .skills .skills-content .right .text,
-  .experiences .experiences-content {
-    position: relative;
-  }
-
-  .skills .skills-content {
-    left: 233px;
-  }
-
-  .skills .skills-content .right .text {
-    left: 5px;
-  }
-
   .experiences .experiences-content {
     right: 160px;
   }
@@ -845,24 +798,14 @@ footer {
 }
 
 @media screen and (max-width: 368px) {
-
-  .skills .skills-content,
-  .skills .skills-content .left .text,
-  .skills .skills-content .center .text,
-  .skills .skills-content .right .text {
-    position: relative;
-  }
-
   .skills .skills-content {
-    left: 270px;
+    grid-template-columns: 1fr;
+    max-width: 100vw;
+    margin: 0 auto;
   }
 
-  .skills .skills-content .left .text,
-  .skills .skills-content .center .text {
-    left: -25px;
-  }
-
-  .skills .skills-content .right .text {
-    left: -25px;
+  .skills .tech-icons {
+    justify-self: center;
+    align-self: center;
   }
 }
