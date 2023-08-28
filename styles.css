@@ -78,7 +78,6 @@ section .title {
 .about-content,
 .interests-content,
 .projects-content,
-.experiences-content,
 .courses-content,
 .contact-content {
   display: flex;
@@ -351,14 +350,19 @@ nav {
 
 /* EXPERIENCES */
 .experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
 }
 
 .experiences .experiences-content {
-  padding-left: 9.375rem;
-  width: calc(33% - 1.25rem);
+  margin-left: 13rem;
+  padding: 0 2.5rem;
+  width: calc(30% - 2rem);
+  text-align: center;
 }
 
 .experiences .dates ul {
@@ -588,22 +592,6 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 90em) {
-
-  .experiences .experiences-content .left .text,
-  .experiences .experiences-content .dates {
-    position: relative;
-  }
-
-  .experiences .experiences-content .left .text {
-    left: 25.625rem;
-  }
-
-  .experiences .experiences-content .dates {
-    left: 6.25rem;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .max-width {
     max-width: 930px;
@@ -686,17 +674,9 @@ footer {
     width: 100vw;
   }
 
-  .experiences .experiences-content,
-  .experiences .experiences-content .dates {
-    position: relative;
-  }
-
   .experiences .experiences-content {
-    right: 150px;
-  }
-
-  .experiences .experiences-content .dates {
-    left: 160px;
+    width: calc(50% - 2rem);
+    margin: 1rem auto auto 11rem;
   }
 
   .courses .courses-content .card {
@@ -732,12 +712,6 @@ footer {
     width: 100%;
   }
 
-  .experiences .experiences-content,
-  .experiences .experiences-content .dates,
-  .experiences .experiences-content .left .text {
-    position: relative;
-  }
-
   .skills .skills-content {
     grid-template-columns: 1fr;
     max-width: 70%;
@@ -755,27 +729,7 @@ footer {
   }
 
   .experiences .experiences-content {
-    right: 120px;
-  }
-
-  .experiences .experiences-content .dates {
-    width: 50%;
-    left: 0;
-  }
-
-  .experiences .experiences-content .left .text {
-    bottom: 40px;
-    right: 150px;
-  }
-
-  .experiences .dates ul {
-    left: 50px;
-  }
-
-  .experiences .dates .circle::before {
-    width: 50%;
-    left: -230px;
-    text-align: center;
+    margin: 1rem auto auto 13rem;
   }
 
   .courses .courses-content .card {
@@ -786,10 +740,6 @@ footer {
 @media screen and (max-width: 400px) {
   .max-width {
     padding: 0 15px;
-  }
-
-  .experiences .experiences-content {
-    right: 160px;
   }
 
   .contact .contact-content .info .sub-title {
