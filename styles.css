@@ -685,21 +685,21 @@ footer {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625em) {
   .max-width {
-    padding: 0 23px;
+    padding: 0 1.4375rem;
   }
 
   .home .home-content .text-2 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .home .home-content .text-3 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .home .home-content a {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .interests .interests-content .card,
