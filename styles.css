@@ -760,5 +760,6 @@ footer {
   .skills .tech-icons {
     justify-self: center;
     align-self: center;
+    margin: 0.625rem;
   }
 }
