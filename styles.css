@@ -752,7 +752,8 @@ footer {
 
 @media screen and (max-width: 23em) {
   .home .bg-img {
-    width: 100vw;
+    background-size: cover;
+    background-position: center center;
   }
 
   .skills .skills-content {
