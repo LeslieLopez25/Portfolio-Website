@@ -683,6 +683,14 @@ footer {
     margin-bottom: 1.25rem;
     width: calc(50% - 0.625rem);
   }
+
+  .contact .contact-content {
+    flex-direction: column;
+  }
+
+  .contact .contact-content .column {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 40.625em) {
