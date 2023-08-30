@@ -751,6 +751,10 @@ footer {
 }
 
 @media screen and (max-width: 23em) {
+  .home .bg-img {
+    width: 100vw;
+  }
+
   .skills .skills-content {
     grid-template-columns: 1fr;
     max-width: 100%;
