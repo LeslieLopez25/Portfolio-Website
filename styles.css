@@ -752,8 +752,7 @@ footer {
 
 @media screen and (max-width: 23em) {
   .home .bg-img {
-    background-size: cover;
-    background-position: center center;
+    overflow-x: hidden;
   }
 
   .skills .skills-content {
