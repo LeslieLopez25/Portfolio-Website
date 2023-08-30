@@ -740,9 +740,9 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25em) {
   .max-width {
-    padding: 0 15px;
+    padding: 0 0.9375rem;
   }
 
   .contact .contact-content .info .sub-title {
@@ -750,10 +750,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 23em) {
   .skills .skills-content {
     grid-template-columns: 1fr;
-    max-width: 100vw;
+    max-width: 100%;
     margin: 0 auto;
   }
 
