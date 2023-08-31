@@ -751,7 +751,7 @@ footer {
 }
 
 @media screen and (max-width: 23em) {
-  .home {
+  .home .bg-img {
     overflow-y: hidden;
   }
 
