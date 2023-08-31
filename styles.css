@@ -196,6 +196,7 @@ nav {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
+  overflow-y: hidden;
 }
 
 .home .bg-img {
@@ -751,10 +752,6 @@ footer {
 }
 
 @media screen and (max-width: 23em) {
-  .home .bg-img {
-    overflow-y: hidden;
-  }
-
   .skills .skills-content {
     grid-template-columns: 1fr;
     max-width: 100%;
