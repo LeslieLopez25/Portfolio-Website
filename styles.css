@@ -751,8 +751,8 @@ footer {
 }
 
 @media screen and (max-width: 23em) {
-  .home .bg-img {
-    overflow-x: hidden;
+  .home {
+    overflow-y: hidden;
   }
 
   .skills .skills-content {
