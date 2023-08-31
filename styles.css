@@ -192,7 +192,6 @@ nav {
 .home {
   display: flex;
   color: hsl(210.1, 100%, 50%);
-  /* min-height: 31.25rem; */
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
@@ -200,7 +199,6 @@ nav {
 
 .home .bg-img {
   width: 100%;
-  /* min-height: 31.25rem; */
   height: 100vh;
   position: absolute;
   left: 0;
