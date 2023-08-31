@@ -200,7 +200,7 @@ nav {
 
 .home .bg-img {
   width: 100%;
-  min-height: 31.25rem;
+  /* min-height: 31.25rem; */
   height: 100vh;
   position: absolute;
   left: 0;
