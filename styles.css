@@ -123,6 +123,24 @@ section .title {
   height: auto;
 }
 
+/* LOADER */
+.load {
+  display: grid;
+  background-color: hsl(212.7, 100%, 6.5%);
+  background-image: url("./assets/images/checkered-pattern.png");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  place-items: center;
+  z-index: 1000;
+}
+
+.load__gif {
+  width: 13.125rem;
+}
+
 /* NAVBAR */
 nav {
   background: hsl(209.5, 100%, 22%, 0.5);

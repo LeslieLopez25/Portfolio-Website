@@ -30,3 +30,12 @@ new hoverEffect({
   image2: "./assets/images/img-2.jpg",
   displacementImage: "./assets/images/leaf.jpg",
 });
+
+// LOADER
+onload = () => {
+  const load = document.getElementById("load");
+
+  setTimeout(() => {
+    load.style.display = "none";
+  }, 2500);
+};
