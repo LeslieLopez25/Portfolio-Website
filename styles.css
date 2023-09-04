@@ -49,6 +49,7 @@ section .title::before {
   transform: translateX(-50%);
 }
 
+header,
 main,
 section {
   background: hsl(212.7, 100%, 6.5%);
@@ -213,7 +214,6 @@ nav {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
-  overflow-y: hidden;
 }
 
 .home .bg-img {
@@ -222,7 +222,6 @@ nav {
   position: absolute;
   left: 0;
   bottom: 0;
-  overflow-y: hidden;
   z-index: 1;
 }
 
