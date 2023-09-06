@@ -257,6 +257,13 @@ nav {
   height: 25rem;
   object-fit: cover;
   border-radius: 6px;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none
 }
 
 .about .about-content .right {
