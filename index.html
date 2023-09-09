@@ -351,7 +351,7 @@
         </div>
         <div class="column right">
           <div class="text">Message Me</div>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <div class="fields">
               <div class="field name">
                 <input type="text" placeholder="Name" name="name" required />
@@ -367,6 +367,7 @@
               <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
             </div>
             <div class="button">
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit">Send Message</button>
             </div>
           </form>
