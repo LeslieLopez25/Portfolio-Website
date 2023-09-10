@@ -510,7 +510,7 @@ nav {
 
 
 .contact .right {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .contact .right form .fields {
@@ -622,6 +622,23 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 50.0625em) and (max-width: 75em) {
+  .about .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about-content .left {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .about .about-content .right {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 50em) and (max-width: 62.5625em) {
   .projects-content .card {
     width: calc(50% - 1.25rem);
