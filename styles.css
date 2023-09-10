@@ -508,6 +508,11 @@ nav {
   font-size: 0.875rem;
 }
 
+
+.contact .right {
+  margin-bottom: 100px;
+}
+
 .contact .right form .fields {
   display: flex;
 }
