@@ -639,22 +639,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 50em) and (max-width: 62.5625em) {
-  .projects-content .card {
-    width: calc(50% - 1.25rem);
-  }
-
-  .projects .btn-code,
-  .projects .btn-demo {
-    padding: 0.625rem 0.46875rem;
-  }
-}
-
-@media screen and (max-width: 50em) {
-  .max-width {
-    max-width: 58.125rem;
-  }
-
+@media screen and (max-width: 65.75em) {
   .menu-btn {
     display: block;
     z-index: 999;
@@ -693,6 +678,23 @@ footer {
 
   .navbar .menu li a:hover {
     color: hsl(210.1, 100%, 50%);
+  }
+}
+
+@media screen and (min-width: 50em) and (max-width: 62.5625em) {
+  .projects-content .card {
+    width: calc(50% - 1.25rem);
+  }
+
+  .projects .btn-code,
+  .projects .btn-demo {
+    padding: 0.625rem 0.46875rem;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .max-width {
+    max-width: 58.125rem;
   }
 
   .home .home-content .text-2 {
