@@ -1,5 +1,5 @@
-# Portfolio-Website
+# Portfolio Website
 
-This is my personal portfolio website with my projects, etc.
+This is my personal website.
 
-[Live Site in the works](https://leslie-lopez.netlify.app/)
+[Leslie Lopez](https://leslie-lopez.netlify.app/)
