@@ -17,9 +17,23 @@ function scrollFunction() {
 const menu = document.querySelector(".mobile-menu");
 const menuLinks = document.querySelector(".menu");
 
+// Function to close the mobile menu
+function closeMobileMenu() {
+  menu.classList.remove("active");
+  menuLinks.classList.remove("active");
+}
+
 menu.addEventListener("click", function () {
   menu.classList.toggle("active");
   menuLinks.classList.toggle("active");
+});
+
+const links = menuLinks.querySelectorAll("a");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMobileMenu();
+  });
 });
 
 // LIQUID ANIMATION EFFECT
