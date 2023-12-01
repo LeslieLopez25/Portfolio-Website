@@ -476,6 +476,10 @@ nav {
   margin-bottom: 0.625rem;
 }
 
+.contact .contact-content .left {
+  margin-bottom: 12rem;
+}
+
 .contact .contact-content .left .icons {
   margin: 0.625rem 0;
 }
@@ -500,15 +504,9 @@ nav {
 }
 
 .contact .contact-content .info .head {
-  font-size: 1.0625rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
-
-.contact .contact-content .info .sub-title {
-  color: hsl(0, 0%, 100%);
-  font-size: 0.875rem;
-}
-
 
 .contact .right {
   margin-bottom: 6.25rem;
@@ -527,7 +525,7 @@ nav {
 
 .contact .right form .textarea {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
 }
 
 .contact .right form .name {
@@ -591,11 +589,11 @@ a:link {
 }
 
 a:visited {
-  color: hsl(0, 0%, 45.9%);
+  color: hsl(212.7, 100%, 6.5%);
 }
 
 a:hover {
-  color: hsl(212.7, 100%, 6.5%);
+  color: hsl(0, 0%, 100%);
 }
 
 /* FOOTER */
